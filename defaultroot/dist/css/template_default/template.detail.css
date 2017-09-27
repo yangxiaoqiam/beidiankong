@@ -261,10 +261,6 @@ textarea {
   word-warp: break-word;
   word-break: break-all;
 }
-.wh-dtl-art img {
-  display: block;
-  margin: 0 auto;
-}
 .wh-dtl-nav {
   text-align: center;
 }
