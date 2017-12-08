@@ -1,0 +1,27 @@
+@import "../../../less/global/template.global.less";
+@import "../../../less/template.bootstrap.theme.wh.less";
+@import "color/var-global.less";
+@import "color/var-default-before.less";
+@import "color/var-default-after.less";
+.theme-mixin(@colorName,
+@global-color,
+@global-color-l: tint(@global-color, 90%),
+@global-color-deep: shade(@global-color, 18%),
+@global-color-light: tint(@global-color, 60%)) {
+  .theme-@{colorName} {
+   
+   /* 其他系统入口*/
+   .sys-into {
+      li {
+          a {
+              div {
+                  background:@global-color;
+              }
+          }
+      }
+    }
+
+     // }结束符
+  }
+}
+

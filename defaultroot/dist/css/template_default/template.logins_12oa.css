@@ -344,6 +344,7 @@ body {
   width: 240px;
   position: absolute;
   top: 8px;
+  right: 0;
   text-indent: 10px;
 }
 .wh-lg-main .wh-lg-form .lg-nomal-form .lg-form-con .form-div input::-webkit-input-placeholder {
@@ -361,6 +362,21 @@ body {
 .wh-lg-main .wh-lg-form .lg-nomal-form .lg-form-con .form-div input:-ms-input-placeholder {
   /* Internet Explorer 10+ */
   color: #d1d1d1;
+}
+.wh-lg-main .wh-lg-form .lg-nomal-form .lg-form-con .form-div .fontbox {
+  position: absolute;
+  left: 50px;
+  top: 0;
+  right: 0;
+}
+.wh-lg-main .wh-lg-form .lg-nomal-form .lg-form-con .form-div .fontbox span {
+  left: 0;
+  top: 0;
+  height: 40px;
+  line-height: 40px;
+  color: #d1d1d1;
+  font-size: 12px;
+  position: absolute;
 }
 .wh-lg-main .wh-lg-form .lg-nomal-form .lg-form-con .form-div2 {
   width: 195px;

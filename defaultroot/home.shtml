@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="wh-gray-bg theme-blue theme-default-blue  size-big">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base url="defaultroot">
+  <title></title>
+  <link rel="stylesheet" href="template/css/template_system/template.reset.min.css" /> 
+  <link rel="stylesheet" href="template/css/template_system/template.fa.min.css" />
+  <link rel="stylesheet" href="template/css/template_default/template.media.min.css" />
+  <link rel="stylesheet" href="template/css/template_default/template.style.min.css" />
+  <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.before.min.css" />  
+  <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.after.min.css" />  
+  <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.media.min.css" /> 
+  <link rel="stylesheet" href="template/css/template_default/template.style.size.min.css" />
+
+</head>
+
+<body class="wh-header-home">
+  <div class="wh-wrapper">
+    <!--#include file="include/idx-global-new.html"-->
+    <div class="wh-content close-l-nav">
+      <span id="switch-l-nav" class="btn-switch-show"><i class="fa fa-caret-right"></i><i class="fa fa-caret-left"></i></span>
+      <div class="wh-l-content" switch-tip="true">
+        <div class="wh-left-menuList">
+          <div class="wh-l-msg">
+            <a href="" class="clearfix">
+              <i class="fa fa-cog fa-color"></i>
+              <span>信息管理 <i class="fa fa-meeting-mana fa-color"></i></span> 
+            </a>
+          </div>
+          <div class="wh-l-con">
+            <ul id="treeDemo" class="ztree"></ul>
+          </div>
+        </div>
+      </div>
+      <div class="wh-r-content wh-r-iframe wh-ios-iframe-bug">
+        <iframe src="information.shtml" allowtransparency="transparent" scrolling="auto" class="wh-portal" width="100%" height="100%" marginheight="0" marginwidth="0" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+  
+  <script type="text/javascript" src="scripts/plugins/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/static/template.custom.js"></script>
+  <script type="text/javascript" src="scripts/plugins/zTree_v3/jquery.ztree.core-3.5.js"></script>
+  <script type="text/javascript" src="scripts/plugins/lhgdialog/lhgcore.lhgdialog.min.js"></script>
+  <script type="text/javascript" src="scripts/pagejs/view-frame.js?v=20160307"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    logo_img_width=($(".wh-header .wh-container img").width());
+    $(".theme-width-blue .wh-header .wh-container .wh-logo").css("width",logo_img_width)
+})
+</script>
+
+</body>
+</html>

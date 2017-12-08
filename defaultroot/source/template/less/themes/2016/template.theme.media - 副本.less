@@ -1,0 +1,338 @@
+@import "../../../less/global/template.global.less";
+@import "../../../less/template.bootstrap.theme.wh.less";
+@import "color/var-global.less";
+@import "color/var-default-before.less";
+@import "color/var-default-after.less";
+
+.theme-mixin(@colorName,
+	@global-color,
+	@global-color-l:tint(@global-color, 90%),
+	@global-color-d:darken(@global-color, 15%)
+) {
+  .theme-@{colorName}{
+		a{
+		  &:hover,&:focus,&:active{ color: @global-color;text-decoration: none;}
+		}
+		td a.xinzeng_29{color: @global-color;}
+
+		// Scroll Bar for webkit
+		::-webkit-scrollbar {
+		  width: 6px;
+		  height:6px;
+		}
+		::-webkit-scrollbar-track {
+		  .border-top-radius(10px);
+		  .border-bottom-radius(10px);
+		  background-color: tint(@global-color,70%);
+		}
+		::-webkit-scrollbar-thumb {
+		  border-radius: 10px;
+		  background-color: tint(@global-color,30%);
+		}
+		::-webkit-scrollbar-thumb:window-inactive {
+		  background-color: tint(@global-color,30%);
+		}
+		::-webkit-scrollbar-thumb:vertical:hover{
+		  background-color: tint(@global-color,20%);
+		}
+		::-webkit-scrollbar-thumb:vertical:active{
+		  background-color: tint(@global-color,10%);
+		}
+
+		// webkit input border
+		.form-control:focus {
+	    border-color:@global-color;
+	    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px tint(@global-color,70%);
+	    box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px tint(@global-color,70%);
+		}
+		.form-control{
+			&.form-control-wh-line{
+				border-color: @global-color;
+			}
+		}
+		.fa{
+			color: @global-color;
+		}
+
+		// SideBar Go top
+		.side-go-top{
+		  a{
+		    border-color:@global-color-gray;
+		    background-color: @global-color-white;
+		    .transition(background-color .3s);
+		    em{
+		    	color:@global-color-black-l;
+		    }
+		    &:hover{
+		    	background-color: @global-color;
+		    	border-color: @global-color;
+		    	color:@global-color-white;
+		    	.transition(background-color .3s);
+		    	i,em{
+		    		color: @global-color-white;
+		    	}
+		    }
+		  }
+		}	
+		//主要内容区域
+		//按钮皮肤
+		.btn{			
+			&.btn-wh,
+			&.btn-wh-blank,
+			&.btn-wh-line{
+				.btn-styles(@global-color);
+			}
+			&.btn-wh{
+				border-color: @global-color;
+				color:@global-color-white;
+				.fa{
+					color: @global-color-white;
+				}
+				&:hover,
+				&:focus{
+					background-color: darken(@global-color, 10%);
+				}
+			}
+			&.btn-wh-line{
+				border-color: @global-color;
+				color:@global-color;
+				background-color:@global-color-white;
+				&:hover,
+				&:focus{
+					background-color:@global-color;
+					color: @global-color-white;					
+					.fa{
+						color: @global-color-white;
+					}
+				}
+			}
+			&.btn-wh-blank{
+				.btn-styles(@global-color-white);
+			}
+			&.btn-wh-file{
+				&:hover,
+				&:focus{
+					border-color: @global-color;
+				}
+			}
+		}
+		.input-group{
+	    .input-group-addon{
+	    	color:@global-color;
+	      background-color:@global-color-white;
+	    }
+	  }
+
+	  //全局弹框	  
+		.modal-header{
+		  border-color: @global-color;  
+		}
+	  //任务弹框
+		.modal-task-set{
+		  .task-form-title{
+		  	a{
+		  		color: @global-color;
+		  	}		    
+		  }
+		}
+
+		//下拉选单样式
+		.chzn-container {
+			&.chzn-container-active{				
+			  .chzn-choices {
+			    border-color:@global-color;
+			    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px tint(@global-color,70%);
+			    box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px tint(@global-color,70%);
+			  }
+			}
+			.chzn-results{
+				li.highlighted {
+					background-color: @global-color;
+					color: @global-color-white;
+				}
+			}
+		}
+
+		//select 控件样式
+		.bootstrap-select.open .dropdown-toggle,
+		.bootstrap-select.open .dropdown-toggle:focus,
+		.bootstrap-select .dropdown-toggle:focus {
+	    border-color:@global-color;
+	    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px tint(@global-color,70%);
+	    box-shadow:inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px tint(@global-color,70%);
+		}
+
+		//日期控件
+
+		.laydate_y .laydate_yms a,
+		.laydate_choose,
+		.laydate_table thead,
+		.laydate_bottom .laydte_hsmtex{background-color:tint(@global-color, 97%);}
+
+		.laydate_click{background-color:@global-color!important; color: @global-color-white;}
+		.laydate_bottom .laydate_btn a{border:1px solid @global-color; margin-left: 3px; background-color:@global-color-white; color: @global-color;}
+		.laydate_bottom .laydate_btn a:hover{background-color:@global-color; color: @global-color-white}
+
+		//Lay弹框样式
+		.layui-layer-title{
+			border-color: @global-color;
+			color: @global-color;
+		}
+
+		//分页
+		.m-pagination-page > li.active > a {
+	    color:@global-color-white;
+	    background-color: @global-color;
+	    border-color: @global-color;
+		}
+
+		//Panel面板
+		.panel-whlist {
+		  .panel-variant(#ddd; @global-color; #fff; @global-color; #fff);
+		}
+	.panel .panel-heading .panel-hd-search .senior-seachbtn .btn.btn-wh-line:focus{
+    background:transparent;
+   color: @global-color;
+}
+.panel .panel-heading .panel-hd-search .senior-seachbtn .btn.btn-wh-line:hover{
+    background:@global-color;
+   color: @global-color-white;
+}
+.panel .panel-heading .panel-hd-search.open .senior-seachbtn .btn.btn-wh-line{background:@global-color ;color:@global-color-white;}
+
+    //列表页 高级搜索 modal弹出框
+    .list-senior-search {
+      .search-title {
+        border-bottom: 1px solid @global-color;
+      }
+    }
+    //选择我的联系人
+    //选人界面 
+    .seleuser-container {
+      border-top: 1px solid @global-color;
+      border-bottom: 1px solid @global-color;
+      .type-tips {
+        li {
+          &.active {
+            background: @global-color;
+            a {
+              color: @global-color-white;
+            }
+          }
+        }
+      }
+      .usertype-searchlist {
+        border: 1px solid @global-color;
+      }
+    }
+    .list-title {
+      background: tint(@global-color, 85%);
+    }
+    .selected-list {
+      .list-title {
+        background: @global-color ;
+        label {
+          color: @global-color-white;
+        }
+        i {
+          color: @global-color-white;
+        }
+      }
+    }
+
+
+    //新样式页签
+    .txl_tab .bd ul li.active{
+    	background:@global-color;
+    	span{
+    		color:#fff;
+    		em{
+    			 color:#fff;
+    		}
+    	}
+    }
+
+
+    //列表页 分类管理
+    .management-handle-set{
+			  ul{
+			    li{
+			      div{
+			      	
+			      	border-color: @global-color-gray; 
+			      }
+			    }
+			  }
+			}
+			.wh-org-tree .org-abc>ul li a.active{
+			     	background: @global-color;
+		        color: #fff;
+	     }
+	     .view-container .wh-org-tree .org-abc>ul li .select_all.active{
+
+
+	     }
+			.org-abc{
+		       color: @global-color;
+						ul{
+							li{
+								a{
+									color: @global-color;
+									width: 20px;
+							    height: 20px;
+							    border-radius: 50%;
+							    line-height: 20px;
+							    display:inline-block;
+							    &.select_all{
+							    	width:28px;
+							    }
+								}
+							}
+						}
+	     } 
+
+	   //流程场景
+	   .process-list{
+	   	 .listbox{
+	   	 	li a:hover{
+	   	 	  	background:@global-color;
+	   	 	  	color:#fff;
+
+	   	 	}
+	   	 }
+	    } 
+	    .syfw {
+        .form-control.form-control-wh-line,
+        .btn.btn-wh-line {
+            border: 1px solid #ccc;
+            &:focus{
+            	border: 1px solid @global-color;
+            }
+        }
+        .btn.btn-wh-line {
+            color: #ccc;
+             &:focus{
+            	color:#fff;
+            }
+        }
+    }
+     
+  //任务查看页面
+   .task-see-box{
+   	  .xmhb{
+   	  	  .xuhb-list{
+   	  	  	  p{
+   	  	  	  	 color:@global-color;
+   	  	  	  	 font-size: 12px;
+   	  	  	  }
+   	  	  }
+   	  }
+   }
+
+    //移动考勤
+    #move-attendance td a{
+    	color:@global-color;
+    }
+	}
+	   
+}

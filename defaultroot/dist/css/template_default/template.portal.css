@@ -5570,6 +5570,37 @@ h5 {
   background: #77c920;
   color: #fff;
 }
+/* html模块 */
+.wh-choose-input-tabtitle {
+  height: 26px;
+  line-height: 26px;
+  color: #505050;
+  width: 90%;
+  padding: 0 5px;
+  border: 0;
+  font-size: 14px;
+}
+.wh-choose-info-text-box {
+  width: 93%;
+}
+.wh-choose-info-textarea-box {
+  width: 93%;
+  height: auto;
+  position: relative;
+}
+.wh-choose-info-textarea-box textarea {
+  width: 100%;
+  border: 0 none;
+  min-height: 80px;
+}
+.wh-choose-info-textarea-box i.delate {
+  position: absolute;
+  right: -26px;
+  bottom: 0;
+}
+.wh-info-set-tab tr.html-selectbox > td {
+  padding-top: 0;
+}
 :root .grid-stack-item > .ui-resizable-handle {
   filter: none;
 }
