@@ -4,10 +4,16 @@
 .theme-red .sys-into li a div {
   background: #cd2500;
 }
+.theme-red .dkong-edit .setting-contents-edit div em {
+  background: #cd2500;
+}
 .theme-pink {
   /* 其他系统入口*/
 }
 .theme-pink .sys-into li a div {
+  background: #dc4fad;
+}
+.theme-pink .dkong-edit .setting-contents-edit div em {
   background: #dc4fad;
 }
 .theme-darkred {
@@ -16,10 +22,16 @@
 .theme-darkred .sys-into li a div {
   background: #ad193d;
 }
+.theme-darkred .dkong-edit .setting-contents-edit div em {
+  background: #ad193d;
+}
 .theme-orange {
   /* 其他系统入口*/
 }
 .theme-orange .sys-into li a div {
+  background: #F27521;
+}
+.theme-orange .dkong-edit .setting-contents-edit div em {
   background: #F27521;
 }
 .theme-lightgreen {
@@ -28,10 +40,16 @@
 .theme-lightgreen .sys-into li a div {
   background: #82ba01;
 }
+.theme-lightgreen .dkong-edit .setting-contents-edit div em {
+  background: #82ba01;
+}
 .theme-green {
   /* 其他系统入口*/
 }
 .theme-green .sys-into li a div {
+  background: #008b18;
+}
+.theme-green .dkong-edit .setting-contents-edit div em {
   background: #008b18;
 }
 .theme-cyan {
@@ -40,10 +58,16 @@
 .theme-cyan .sys-into li a div {
   background: #03b3b1;
 }
+.theme-cyan .dkong-edit .setting-contents-edit div em {
+  background: #03b3b1;
+}
 .theme-seablue {
   /* 其他系统入口*/
 }
 .theme-seablue .sys-into li a div {
+  background: #00829a;
+}
+.theme-seablue .dkong-edit .setting-contents-edit div em {
   background: #00829a;
 }
 .theme-skyblue {
@@ -52,10 +76,16 @@
 .theme-skyblue .sys-into li a div {
   background: #5cb2ff;
 }
+.theme-skyblue .dkong-edit .setting-contents-edit div em {
+  background: #5cb2ff;
+}
 .theme-blue {
   /* 其他系统入口*/
 }
 .theme-blue .sys-into li a div {
+  background: #0073c6;
+}
+.theme-blue .dkong-edit .setting-contents-edit div em {
   background: #0073c6;
 }
 .theme-violet {
@@ -64,10 +94,16 @@
 .theme-violet .sys-into li a div {
   background: #4617b5;
 }
+.theme-violet .dkong-edit .setting-contents-edit div em {
+  background: #4617b5;
+}
 .theme-purple {
   /* 其他系统入口*/
 }
 .theme-purple .sys-into li a div {
+  background: #8c0095;
+}
+.theme-purple .dkong-edit .setting-contents-edit div em {
   background: #8c0095;
 }
 .theme-indigo {
@@ -76,10 +112,16 @@
 .theme-indigo .sys-into li a div {
   background: #004b8c;
 }
+.theme-indigo .dkong-edit .setting-contents-edit div em {
+  background: #004b8c;
+}
 .theme-darkblue {
   /* 其他系统入口*/
 }
 .theme-darkblue .sys-into li a div {
+  background: #001941;
+}
+.theme-darkblue .dkong-edit .setting-contents-edit div em {
   background: #001941;
 }
 .theme-maroon {
@@ -88,10 +130,16 @@
 .theme-maroon .sys-into li a div {
   background: #580000;
 }
+.theme-maroon .dkong-edit .setting-contents-edit div em {
+  background: #580000;
+}
 .theme-brown {
   /* 其他系统入口*/
 }
 .theme-brown .sys-into li a div {
+  background: #380001;
+}
+.theme-brown .dkong-edit .setting-contents-edit div em {
   background: #380001;
 }
 .theme-gray {
@@ -100,9 +148,15 @@
 .theme-gray .sys-into li a div {
   background: #585858;
 }
+.theme-gray .dkong-edit .setting-contents-edit div em {
+  background: #585858;
+}
 .theme-black {
   /* 其他系统入口*/
 }
 .theme-black .sys-into li a div {
+  background: #333;
+}
+.theme-black .dkong-edit .setting-contents-edit div em {
   background: #333;
 }

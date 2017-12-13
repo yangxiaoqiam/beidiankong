@@ -181,7 +181,10 @@ module.exports = function(grunt) {
         src: '<%= meta.lessPath %>/themes/2016/<%= pkg.name %>.theme.width.less',
         dest: '<%= meta.distPath %>/css/<%= template.tmpDefault %>/themes/2016/<%= pkg.name %>.theme.width.css'
       },
-
+       themespro: {
+        src: '<%= meta.lessPath %>/themes/2016/<%= pkg.name %>.theme.pro.less',
+        dest: '<%= meta.distPath %>/css/<%= template.tmpDefault %>/themes/2016/<%= pkg.name %>.theme.pro.css'
+      },
       themesdetail: {
         src: '<%= meta.lessPath %>/themes/2016/<%= pkg.name %>.theme.detail.less',
         dest: '<%= meta.distPath %>/css/<%= template.tmpDefault %>/themes/2016/<%= pkg.name %>.theme.detail.css'
@@ -293,6 +296,10 @@ module.exports = function(grunt) {
       themeswidth: {
         src: '<%= meta.distPath %>/css/<%= template.tmpDefault %>/themes/2016/<%= pkg.name %>.theme.width.css',
         dest: '<%= meta.docsPath %>/css/<%= template.tmpDefault %>/themes/2016/<%= pkg.name %>.theme.width.min.css'
+      },
+       themespro: {
+        src: '<%= meta.distPath %>/css/<%= template.tmpDefault %>/themes/2016/<%= pkg.name %>.theme.pro.css',
+        dest: '<%= meta.docsPath %>/css/<%= template.tmpDefault %>/themes/2016/<%= pkg.name %>.theme.pro.min.css'
       },
       themesmedia: {
         src: '<%= meta.distPath %>/css/<%= template.tmpDefault %>/themes/2016/<%= pkg.name %>.theme.media.css',

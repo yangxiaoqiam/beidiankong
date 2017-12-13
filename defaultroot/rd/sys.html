@@ -8,7 +8,15 @@
     <base url="defaultroot">
     <title></title>
     <link rel="stylesheet" href="../template/css/template_system/template.reset.min.css" />
+  <link rel="stylesheet" href="../template/css/template_default/template.style.min.css">
+  <link rel="stylesheet" href="../template/css/template_default/themes/2016/template.theme.before.min.css">  
+  <link rel="stylesheet" href="../template/css/template_default/themes/2016/template.theme.after.min.css">
     <link rel="stylesheet" type="text/css" href="../template/css/template_default/themes/2016/template.theme.pro.min.css">
+    <script type="text/javascript" src="../scripts/plugins/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="../scripts/static/template.custom.js"></script>
+  <script type="text/javascript" src="../scripts/plugins/zTree_v3/jquery.ztree.core-3.5.js"></script>
+  <script type="text/javascript" src="../scripts/plugins/lhgdialog/lhgcore.lhgdialog.min.js"></script>
+  <script type="text/javascript" src="../scripts/pagejs/view-frame.js?v=20160307"></script>
     <link rel="stylesheet" type="text/css" href="css/pro.css">
 </head>
 
@@ -66,6 +74,66 @@
             </li>
         </ul>
     </div>
+        <!--提醒事项-->
+    <div class="wh-sys-setting-dialog dkong" style="display:none;">
+        <div class="wh-sys-notice wh-sys-notice-list-setting-edit dkong-edit" style="display: block">
+            <div class="setting-contents-edit clearfix" >
+                <div>
+                    <em><img src="img/sys1.png"></em>
+                    <p>EKPS系统</p>
+                    <span>隐藏</span>
+                </div>
+                <div>
+                    <em><img src="img/sys2.png"></em>
+                    <p>久其财务系统</p>
+                    <span>隐藏</span>
+                </div>
+                <div>
+                     <em><img src="img/sys3.png"></em>
+                    <p>园区地产系统</p>
+                    <span>隐藏</span>
+                </div>
+                <div>
+                     <em><img src="img/sys4.png"></em>
+                    <p>财产评估系统</p>
+                    <span>隐藏</span>
+                </div>
+                <div>
+                     <em><img src="img/sys5.png"></em>
+                    <p>产权登记系统</p>
+                    <span>隐藏</span>
+                </div>
+                <div>
+                    <em><img src="img/sys6.png"></em>
+                    <p>EMS系统</p>
+                    <span class="show">显示</span>
+                </div>
+                <div>
+                    <em><img src="img/sys7.png"></em>
+                    <p>信访管理系统</p>
+                    <span class="show">显示</span>
+                </div>
+               
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript">
+        
+     //提醒
+  $(".sys-into .add").click(function() {
+    var wh_hd_tips_dialog = $.dialog({
+      title: '更多登录系统',
+      content: $(".wh-sys-setting-dialog").html(),
+      width: 442,
+      height: 270,
+      max: false,
+      min: false,
+    });
+  });
+
+    </script>
 </body>
 
 </html>
