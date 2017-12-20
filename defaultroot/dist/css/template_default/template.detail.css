@@ -1025,6 +1025,7 @@ textarea {
 }
 .wh-sort .sort-tit .sort-tit-ser {
   width: 80%;
+  margin-top: 4px;
 }
 .wh-sort .sort-tit .sort-tit-ser p {
   display: inline-block;
@@ -1050,15 +1051,17 @@ textarea {
   float: left;
   margin-right: 2%;
   margin-bottom: 30px;
-  height: 197px;
+  height: 200px;
 }
 .wh-sort .sort-list ul li.item.noright {
   margin-right: 0px;
 }
 .wh-sort .sort-list ul li.item.add {
-  height: 197px;
-  line-height: 197px;
   text-align: center;
+}
+.wh-sort .sort-list ul li.item.add a {
+  display: inline-block;
+  margin-top: 75px;
 }
 .wh-sort .sort-list ul li.item.add a .fa {
   color: #C8C1C1;
@@ -1098,13 +1101,13 @@ textarea {
 }
 .wh-sort .sort-list ul li.item .sort-ms {
   padding: 0 20px;
-  height: 102px;
+  height: 105px;
   margin: 20px 0;
   overflow: hidden;
 }
 .wh-sort .sort-list ul li.item .sort-btn {
   text-align: right;
-  padding: 7px 15px 4px 15px;
+  padding: 7px 15px 7px 15px;
   margin: 0;
   border-top: 1px solid #cfcfcf;
 }
