@@ -43,7 +43,7 @@
 
 .att-com {
     width: 310px;
-    height: 214px;
+    height: 250px;
     overflow-y: auto;
     ul {
         height: 176px;
@@ -100,9 +100,10 @@
                 padding: 5px;
                 position: relative;
                 overflow: hidden;
-                float: left;
                 text-align: left;
                 list-style:none;
+                width: auto !important;
+                float:none;
                 a {
                     position: relative;
                     z-index: 1;
@@ -201,3 +202,14 @@
 
 .fujian-download{text-align:left;}
 .fujian-download em{ font-style: normal;}
+.detail-fujian{
+    position:relative;
+}
+.batch-download{
+    display:block;
+    position:absolute;
+    left:0;
+    top:-6px;
+    width:100%;
+}
+
