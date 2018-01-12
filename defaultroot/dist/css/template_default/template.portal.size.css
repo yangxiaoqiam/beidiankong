@@ -11,6 +11,7 @@ body.size-big {
 /*12号  小尺寸*/
 .size-small {
   /* 新增列表 */
+  /* 电控 */
 }
 .size-small .wh-main {
   margin: 0 auto;
@@ -374,9 +375,14 @@ body.size-big {
 .size-small .quick-link-a li a p.title {
   font-size: 12px;
 }
+.size-small .portlet-define-setbox td a,
+.size-small .portlet-define-setbox td div {
+  font-size: 12px;
+}
 /*14号  大尺寸*/
 .size-big {
   /* 新增列表 */
+  /* 电控 */
 }
 .size-big .wh-main {
   margin: 0 auto;
@@ -744,9 +750,14 @@ body.size-big {
 .size-big .quick-link-a li a p.title {
   font-size: 14px;
 }
+.size-big .portlet-define-setbox td a,
+.size-big .portlet-define-setbox td div {
+  font-size: 14px;
+}
 /*16号  大尺寸*/
 .size-big16 {
   /* 新增列表 */
+  /* 电控 */
 }
 .size-big16 .wh-main {
   margin: 0 auto;
@@ -1176,5 +1187,9 @@ body.size-big {
   font-size: 16px;
 }
 .size-big16 .quick-link-a li a p.title {
+  font-size: 16px;
+}
+.size-big16 .portlet-define-setbox td a,
+.size-big16 .portlet-define-setbox td div {
   font-size: 16px;
 }

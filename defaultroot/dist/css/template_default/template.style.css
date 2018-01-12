@@ -1401,7 +1401,7 @@ gway-switch-btn.wh-wrapper.wh-s-wrapper {
 }
 .wh-hd-l-nav dd > .wh-hd-custom-menu {
   display: inline-block;
-  padding: 0 18px;
+  padding: 0 15px;
   position: relative;
 }
 .wh-hd-l-nav dd > .wh-hd-custom-menu > .fa {
@@ -1676,7 +1676,7 @@ gway-switch-btn.wh-wrapper.wh-s-wrapper {
   float: left;
   height: 60px;
   padding: 0 10px;
-  width: 35px;
+  width: 30px;
 }
 .wh-hd-r-nav li > a > i {
   font-size: 18px;
@@ -1713,8 +1713,8 @@ gway-switch-btn.wh-wrapper.wh-s-wrapper {
 }
 @media (min-width: 1200px) {
   .wh-hd-r-nav li {
-    padding: 0 15px;
-    width: 35px;
+    padding: 0 10px;
+    width: 30px;
   }
   .wh-hd-r-nav li .wh-sys-warn-num {
     left: 28px;

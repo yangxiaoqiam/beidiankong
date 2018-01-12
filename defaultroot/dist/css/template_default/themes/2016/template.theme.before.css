@@ -1,10 +1,5 @@
 .theme-red {
-  /*  .wh-left-menuList {
-     border-top-color: @global-color;
-     .wh-l-msg {
-       border-bottom-color: @global-color;
-     }
-   } */
+  /* 北电控 */
 }
 .theme-red .bgcolor-acd598 {
   background-color: #acd598;
@@ -200,6 +195,12 @@
 .theme-red .btn-switch-hide i.fa,
 .theme-red .btn-switch-show i.fa {
   color: #cd2500;
+}
+.theme-red .wh-left-menuList {
+  border-top-color: #cd2500;
+}
+.theme-red .wh-left-menuList .wh-l-msg {
+  border-bottom-color: #cd2500;
 }
 .theme-red .wh-l-all-list.on,
 .theme-red .wh-l-all-list:hover,
@@ -1115,13 +1116,12 @@
 .theme-red .quick-link-a li:hover a p .fa {
   color: #fff;
 }
+.theme-red .portlet-define-setbox td a:focus,
+.theme-red .portlet-define-setbox td a:hover {
+  color: #cd2500;
+}
 .theme-pink {
-  /*  .wh-left-menuList {
-     border-top-color: @global-color;
-     .wh-l-msg {
-       border-bottom-color: @global-color;
-     }
-   } */
+  /* 北电控 */
 }
 .theme-pink .bgcolor-acd598 {
   background-color: #acd598;
@@ -1317,6 +1317,12 @@
 .theme-pink .btn-switch-hide i.fa,
 .theme-pink .btn-switch-show i.fa {
   color: #dc4fad;
+}
+.theme-pink .wh-left-menuList {
+  border-top-color: #dc4fad;
+}
+.theme-pink .wh-left-menuList .wh-l-msg {
+  border-bottom-color: #dc4fad;
 }
 .theme-pink .wh-l-all-list.on,
 .theme-pink .wh-l-all-list:hover,
@@ -2232,13 +2238,12 @@
 .theme-pink .quick-link-a li:hover a p .fa {
   color: #fff;
 }
+.theme-pink .portlet-define-setbox td a:focus,
+.theme-pink .portlet-define-setbox td a:hover {
+  color: #dc4fad;
+}
 .theme-darkred {
-  /*  .wh-left-menuList {
-     border-top-color: @global-color;
-     .wh-l-msg {
-       border-bottom-color: @global-color;
-     }
-   } */
+  /* 北电控 */
 }
 .theme-darkred .bgcolor-acd598 {
   background-color: #acd598;
@@ -2434,6 +2439,12 @@
 .theme-darkred .btn-switch-hide i.fa,
 .theme-darkred .btn-switch-show i.fa {
   color: #ad193d;
+}
+.theme-darkred .wh-left-menuList {
+  border-top-color: #ad193d;
+}
+.theme-darkred .wh-left-menuList .wh-l-msg {
+  border-bottom-color: #ad193d;
 }
 .theme-darkred .wh-l-all-list.on,
 .theme-darkred .wh-l-all-list:hover,
@@ -3349,13 +3360,12 @@
 .theme-darkred .quick-link-a li:hover a p .fa {
   color: #fff;
 }
+.theme-darkred .portlet-define-setbox td a:focus,
+.theme-darkred .portlet-define-setbox td a:hover {
+  color: #ad193d;
+}
 .theme-orange {
-  /*  .wh-left-menuList {
-     border-top-color: @global-color;
-     .wh-l-msg {
-       border-bottom-color: @global-color;
-     }
-   } */
+  /* 北电控 */
 }
 .theme-orange .bgcolor-acd598 {
   background-color: #acd598;
@@ -3551,6 +3561,12 @@
 .theme-orange .btn-switch-hide i.fa,
 .theme-orange .btn-switch-show i.fa {
   color: #F27521;
+}
+.theme-orange .wh-left-menuList {
+  border-top-color: #F27521;
+}
+.theme-orange .wh-left-menuList .wh-l-msg {
+  border-bottom-color: #F27521;
 }
 .theme-orange .wh-l-all-list.on,
 .theme-orange .wh-l-all-list:hover,
@@ -4466,13 +4482,12 @@
 .theme-orange .quick-link-a li:hover a p .fa {
   color: #fff;
 }
+.theme-orange .portlet-define-setbox td a:focus,
+.theme-orange .portlet-define-setbox td a:hover {
+  color: #F27521;
+}
 .theme-lightgreen {
-  /*  .wh-left-menuList {
-     border-top-color: @global-color;
-     .wh-l-msg {
-       border-bottom-color: @global-color;
-     }
-   } */
+  /* 北电控 */
 }
 .theme-lightgreen .bgcolor-acd598 {
   background-color: #acd598;
@@ -4668,6 +4683,12 @@
 .theme-lightgreen .btn-switch-hide i.fa,
 .theme-lightgreen .btn-switch-show i.fa {
   color: #82ba01;
+}
+.theme-lightgreen .wh-left-menuList {
+  border-top-color: #82ba01;
+}
+.theme-lightgreen .wh-left-menuList .wh-l-msg {
+  border-bottom-color: #82ba01;
 }
 .theme-lightgreen .wh-l-all-list.on,
 .theme-lightgreen .wh-l-all-list:hover,
@@ -5583,13 +5604,12 @@
 .theme-lightgreen .quick-link-a li:hover a p .fa {
   color: #fff;
 }
+.theme-lightgreen .portlet-define-setbox td a:focus,
+.theme-lightgreen .portlet-define-setbox td a:hover {
+  color: #82ba01;
+}
 .theme-green {
-  /*  .wh-left-menuList {
-     border-top-color: @global-color;
-     .wh-l-msg {
-       border-bottom-color: @global-color;
-     }
-   } */
+  /* 北电控 */
 }
 .theme-green .bgcolor-acd598 {
   background-color: #acd598;
@@ -5785,6 +5805,12 @@
 .theme-green .btn-switch-hide i.fa,
 .theme-green .btn-switch-show i.fa {
   color: #008b18;
+}
+.theme-green .wh-left-menuList {
+  border-top-color: #008b18;
+}
+.theme-green .wh-left-menuList .wh-l-msg {
+  border-bottom-color: #008b18;
 }
 .theme-green .wh-l-all-list.on,
 .theme-green .wh-l-all-list:hover,
@@ -6700,13 +6726,12 @@
 .theme-green .quick-link-a li:hover a p .fa {
   color: #fff;
 }
+.theme-green .portlet-define-setbox td a:focus,
+.theme-green .portlet-define-setbox td a:hover {
+  color: #008b18;
+}
 .theme-cyan {
-  /*  .wh-left-menuList {
-     border-top-color: @global-color;
-     .wh-l-msg {
-       border-bottom-color: @global-color;
-     }
-   } */
+  /* 北电控 */
 }
 .theme-cyan .bgcolor-acd598 {
   background-color: #acd598;
@@ -6902,6 +6927,12 @@
 .theme-cyan .btn-switch-hide i.fa,
 .theme-cyan .btn-switch-show i.fa {
   color: #03b3b1;
+}
+.theme-cyan .wh-left-menuList {
+  border-top-color: #03b3b1;
+}
+.theme-cyan .wh-left-menuList .wh-l-msg {
+  border-bottom-color: #03b3b1;
 }
 .theme-cyan .wh-l-all-list.on,
 .theme-cyan .wh-l-all-list:hover,
@@ -7817,13 +7848,12 @@
 .theme-cyan .quick-link-a li:hover a p .fa {
   color: #fff;
 }
+.theme-cyan .portlet-define-setbox td a:focus,
+.theme-cyan .portlet-define-setbox td a:hover {
+  color: #03b3b1;
+}
 .theme-seablue {
-  /*  .wh-left-menuList {
-     border-top-color: @global-color;
-     .wh-l-msg {
-       border-bottom-color: @global-color;
-     }
-   } */
+  /* 北电控 */
 }
 .theme-seablue .bgcolor-acd598 {
   background-color: #acd598;
@@ -8019,6 +8049,12 @@
 .theme-seablue .btn-switch-hide i.fa,
 .theme-seablue .btn-switch-show i.fa {
   color: #00829a;
+}
+.theme-seablue .wh-left-menuList {
+  border-top-color: #00829a;
+}
+.theme-seablue .wh-left-menuList .wh-l-msg {
+  border-bottom-color: #00829a;
 }
 .theme-seablue .wh-l-all-list.on,
 .theme-seablue .wh-l-all-list:hover,
@@ -8934,13 +8970,12 @@
 .theme-seablue .quick-link-a li:hover a p .fa {
   color: #fff;
 }
+.theme-seablue .portlet-define-setbox td a:focus,
+.theme-seablue .portlet-define-setbox td a:hover {
+  color: #00829a;
+}
 .theme-skyblue {
-  /*  .wh-left-menuList {
-     border-top-color: @global-color;
-     .wh-l-msg {
-       border-bottom-color: @global-color;
-     }
-   } */
+  /* 北电控 */
 }
 .theme-skyblue .bgcolor-acd598 {
   background-color: #acd598;
@@ -9136,6 +9171,12 @@
 .theme-skyblue .btn-switch-hide i.fa,
 .theme-skyblue .btn-switch-show i.fa {
   color: #5cb2ff;
+}
+.theme-skyblue .wh-left-menuList {
+  border-top-color: #5cb2ff;
+}
+.theme-skyblue .wh-left-menuList .wh-l-msg {
+  border-bottom-color: #5cb2ff;
 }
 .theme-skyblue .wh-l-all-list.on,
 .theme-skyblue .wh-l-all-list:hover,
@@ -10050,6 +10091,10 @@
 }
 .theme-skyblue .quick-link-a li:hover a p .fa {
   color: #fff;
+}
+.theme-skyblue .portlet-define-setbox td a:focus,
+.theme-skyblue .portlet-define-setbox td a:hover {
+  color: #5cb2ff;
 }
 /* theme-green 左侧菜单颜色修改 */
 .theme-green.theme-default-green .wh-l-content .wh-left-menuList {

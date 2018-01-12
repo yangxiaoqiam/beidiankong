@@ -1,37 +1,5 @@
-.clearfix:before {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
-    content: " ";
-    display: table;
-}
-
-.clearfix {
-    display: block;
-}
-
-.fr {
-    float: right
-}
-
-.fl {
-    float: left
-}
-
-.tc {
-    text-align: center;
-}
-
-.tr {
-    text-align: right;
-}
-
-
-
-
+.clearfix:before{content:" ";display:table}.clearfix:after{clear:both;content:" ";display:table}.clearfix{display:block}.fr{float:right}.fl{float:left}
+.tc{text-align:center}.tr{text-align:right}
 
 //附件
 .att-com * {
@@ -40,7 +8,6 @@
     -ms-box-sizing: border-box;
     box-sizing: border-box;
 }
-
 .att-com {
     width: 310px;
     height: 250px;
@@ -173,33 +140,31 @@
         cursor:pointer;
     }
 }
-
-
-    .dropdown-menu {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        z-index: 1000;
-        float: left;
-        min-width: 160px;
-        padding: 5px 0;
-        margin: 2px 0 0;
-        list-style: none;
-        font-size: 14px;
-        text-align: left;
-        background-color: #fff;
-        border: 1px solid #ccc;
-        border: 1px solid rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
-        background-clip: padding-box;
-        padding: 10px;
-        border: 1px solid rgba(0, 0, 0, 0.05);
-        -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
-    }
-
+.dropdown-menu {
+    position: absolute;
+    display:none;
+    top:20px;
+    right: 0;
+    z-index: 1000;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    text-align: left;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175);
+    background-clip: padding-box;
+    padding: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.08);
+}
 .fujian-download{text-align:left;}
 .fujian-download em{ font-style: normal;}
 .detail-fujian{
@@ -208,8 +173,23 @@
 .batch-download{
     display:block;
     position:absolute;
-    left:0;
+    left:6px;
     top:-6px;
-    width:100%;
+    right:0;
 }
 
+ul#files{
+    margin:55px 0 0 10px;
+}
+
+.dk-fujian{
+    position:relative;
+    display:block;
+    background: pink;
+}
+.fujianbox{
+    position:absolute;
+    top:-10px;
+    right:0;
+    width:300px;
+}
