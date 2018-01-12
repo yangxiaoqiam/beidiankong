@@ -225,6 +225,9 @@ html.size-big16 body {
 .size-small .wh-slide-consult-ul li .wh-zidao {
   font-size: 12px;
 }
+.size-small .wh-sys-warn-num {
+  font-size: 12px;
+}
 /*14号  大尺寸*/
 .size-big h1 {
   font-size: 18px;
@@ -461,6 +464,9 @@ html.size-big16 body {
 .size-big .wh-l-content {
   top: 72px;
 }
+.size-big .wh-sys-warn-num {
+  font-size: 13px;
+}
 /*16号  大尺寸*/
 .size-big16 {
   /* 通讯录头部按钮居中问题 */
@@ -694,4 +700,7 @@ html.size-big16 body {
 }
 .size-big16 .wh-l-content {
   top: 81px;
+}
+.size-big16 .wh-sys-warn-num {
+  font-size: 13px;
 }
