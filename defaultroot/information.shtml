@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.before.min.css" />
     <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.after.min.css" />
     <link rel="stylesheet" href="templates/template_default/themes/2015/color_default/template.color.default.css">
+     <link rel="stylesheet" href="themes/common/common.css">
     <script type="text/javascript" src="scripts/plugins/jquery/jquery.min.js"></script>
     <script type="text/javascript" src="scripts/plugins/superslide/jquery.SuperSlide.2.1.1.js"></script>
     <script type="text/javascript" src="scripts/plugins/flexslide/jquery.flexslider.js"></script>
@@ -87,7 +88,7 @@
                             </div>
                         </div>
                         <!-- 流程催办-->
-                        <div class="wh-portal-info-box wh-portal-noborder">
+                        <div class="wh-portal-info-box wh-portal-noborder dk-process">
                             <!--#include file="platform/portal/portal-i-tools.html"-->
                             <div class="wh-portal-info">
                                 <!--#include file="platform/portal/pending_file_four_column.html"-->

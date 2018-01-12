@@ -1,0 +1,826 @@
+<html lang="zh-cn" class="wh-gray-bg theme-red theme-newpure-red size-big">
+
+<head>
+    <link href="http://192.168.0.246:7240/defaultroot/scripts/plugins/lhgdialog/skins/idialog.css" rel="stylesheet" id="lhgdialoglink">
+    <title>设计门户-限时办理y</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="../scripts/jquery-1.12.4.min.js"></script>
+    <script type="text/javascript" src="../scripts/plugins/superslide/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="../scripts/plugins/flexslide/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="../scripts/plugins/foucs/jquery.foucs.js"></script>
+    <!--
+    <script type="text/javascript" src="../scripts/plugins/html5/html5.js" ></script>    
+    <script type="text/javascript" src="../scripts/plugins/html5/excanvas.js" ></script>
+    <script type="text/javascript" src="../scripts/plugins/radialindicator/radialIndicator.js" ></script>
+    -->
+    <script type="text/javascript" src="../scripts/plugins/highcharts/jquery.highcharts.js"></script>
+    <script type="text/javascript" src="../scripts/plugins/highcharts/jquery.highcharts-more.js"></script>
+    <script type="text/javascript">
+    var whirRootPath = "..";
+    var preUrl = "..";
+    var whir_browser = "chrome";
+    var whir_agent = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.36";
+    var whir_skin = "themes/2015/color_red";
+    </script>
+    <!-- 20160607 -by jqq 新版换肤/样式等 -->
+    <link rel="stylesheet" href="../template/css/template_system/template.reset.min.css">
+    <link rel="stylesheet" href="../template/css/template_system/template.fa.min.css">
+    <link rel="stylesheet" href="../template/css/template_default/template.portal.min.css">
+    <link rel="stylesheet" href="../template/css/template_default/template.style.min.css">
+    <link rel="stylesheet" href="../template/css/template_default/template.portal.size.min.css">
+    <link rel="stylesheet" href="../template/css/template_default/themes/2016/template.theme.before.min.css">
+    <link rel="stylesheet" href="../template/css/template_default/themes/2016/template.theme.after.min.css">
+    <link rel="stylesheet" href="../template/css/template_default/themes/2016/template.theme.newpure.min.css">
+    <!-- 20161012 -by jqq 新增首页扩展样式文件 -->
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" href="../templates/template_default/common/css/template.portal.ie8.css" />
+    <script type="text/javascript" src="../scripts/plugins/respond/respond.js" ></script>
+    <![endif]-->
+
+    <link href="/defaultroot/public/upload/uploadify/uploadify.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+    /*html{+overflow:hidden;}*/
+
+    .dm {
+        position: relative;
+        width: 1px;
+        height: 1px;
+    }
+    </style>
+
+    <style type="text/css">
+    .modbox {
+        margin: 0px 10px 15px 10px;
+        /*background-color:white;*/
+        border: 0px solid #3366cc;
+    }
+    </style>
+    <link rel="stylesheet" type="text/css" media="screen" href="http://192.168.0.246:7240/defaultroot/themes/common/style_chrome.css">
+</head>
+
+<body>
+    <div style="position: fixed; left: 585px; top: 235px; visibility: visible; width: auto; z-index: 70002;">
+        <table class="ui_border ui_state_visible ui_state_focus ui_state_lock">
+            <tbody>
+                <tr>
+                    <td class="ui_lt"></td>
+                    <td class="ui_t"></td>
+                    <td class="ui_rt"></td>
+                </tr>
+                <tr>
+                    <td class="ui_l"></td>
+                    <td class="ui_c">
+                        <div class="ui_inner">
+                            <table class="ui_dialog">
+                                <tbody>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div class="ui_title_bar">
+                                                <div class="ui_title" unselectable="on" style="cursor: move;">HTML模块设置</div>
+                                                <div class="ui_title_buttons"><a class="ui_min" href="javascript:void(0);" title="最小化" style="display: none;"><b class="ui_min_b"></b></a><a class="ui_max" href="javascript:void(0);" title="最大化" style="display: none;"><b class="ui_max_b"></b></a><a class="ui_res" href="javascript:void(0);" title="还原"><b class="ui_res_b"></b><b class="ui_res_t"></b></a><a class="ui_close" href="javascript:void(0);" title="关闭" style="display: inline-block;">×</a></div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td class="ui_icon" style="display: none;"></td>
+                                        <td class="ui_main" style="width: 730px; height: 150px;">
+                                            <div class="ui_content" style="padding: 10px;">
+                                                <div class="wh-info-set-tab" style="min-height:260px;max-height:520px;overflow-y:auto">
+                                                    <table cellpadding="0" cellspacing="0" width="100%">
+                                                        <tbody>
+                                                            <tr>
+                                                                <th><em><input type="checkbox" name="">多页签：</em></th>
+                                                                <td colspan="3"><a href="#" class="wh-control-btn-blue add-tab" style="font-size: 12px;">新增页签</a></td>
+                                                            </tr>
+                                                            <tr  class="html-selectbox">
+                                                                <td colspan="4">
+                                                                  
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th><em>标题名称：</em></th>
+                                                                <td colspan="3">
+                                                                    <div class="wh-choose-info-column clearfix">
+                                                                        <div class="wh-choose-info-text">
+                                                                            <i class="fa fa-dotted-circle" data-icon="true"></i>
+                                                                            <input type="text" class="wh-choose-info-input" id="title" name="title" value="HTML模块" placeholder="" maxlength="10">
+                                                                            <input type="hidden" id="iconFont" name="iconFont" value="">
+                                                                            <!--icon select-->
+                                                                            <div class="wh-choose-tips">
+                                                                                <i class="fa fa-dotted-circle" title="无"></i>
+                                                                                <i class="fa fa-bell"></i>
+                                                                                <i class="fa fa-info-circle"></i>
+                                                                                <i class="fa fa-search"></i>
+                                                                                <i class="fa fa-users"></i>
+                                                                                <i class="fa fa-skin"></i>
+                                                                                <i class="fa fa-home"></i>
+                                                                                <i class="fa fa-comments-o"></i>
+                                                                                <i class="fa fa-share-alt"></i>
+                                                                                <i class="fa fa-briefcase"></i>
+                                                                                <i class="fa fa-envelope"></i>
+                                                                                <i class="fa fa-laptop"></i>
+                                                                                <i class="fa fa-desktop"></i>
+                                                                                <i class="fa fa-user"></i>
+                                                                                <i class="fa fa-comments"></i>
+                                                                                <i class="fa fa-weibo"></i>
+                                                                                <i class="fa fa-globe"></i>
+                                                                                <i class="fa fa-share-square-o"></i>
+                                                                                <i class="fa fa-link"></i>
+                                                                                <i class="fa fa-book"></i>
+                                                                                <i class="fa fa-lightbulb-o"></i>
+                                                                                <i class="fa fa-clock-o"></i>
+                                                                                <i class="fa fa-cog"></i>
+                                                                                <i class="fa fa-calculator"></i>
+                                                                                <i class="fa fa-map-marker"></i>
+                                                                                <!--i class="fa fa-File-mana"></i-->
+                                                                                <i class="fa fa-archive"></i>
+                                                                                <i class="fa fa-short-mes"></i>
+                                                                                <i class="fa fa-folder-open"></i>
+                                                                                <i class="fa fa-custom-mod"></i>
+                                                                                <i class="fa fa-asset-mana"></i>
+                                                                                <i class="fa fa-card-order"></i>
+                                                                                <i class="fa fa-meeting-mana"></i>
+                                                                                <i class="fa fa-contract-mana"></i>
+                                                                                <i class="fa fa-data-mana"></i>
+                                                                                <i class="fa fa-equipment-mana"></i>
+                                                                                <i class="fa fa-car"></i>
+                                                                                <i class="fa fa-leaf"></i>
+                                                                                <i class="fa fa-item-mana"></i>
+                                                                                <i class="fa fa-online-sur"></i>
+                                                                                <i class="fa fa-project-mana"></i>
+                                                                                <i class="fa fa-questionnaire-inv"></i>
+                                                                                <i class="fa fa-cog"></i>
+                                                                                <i class="fa fa-folder"></i>
+                                                                                <i class="fa fa-essence-pro"></i>
+                                                                                <i class="fa fa-expert-gro"></i>
+                                                                                <i class="fa fa-expert-set"></i>
+                                                                                <i class="fa fa-question-circle"></i>
+                                                                                <i class="fa fa-personal-pro"></i>
+                                                                                <i class="fa fa-file"></i>
+                                                                                <i class="fa fa-file-text"></i>
+                                                                                <i class="fa fa-pencil-square-o"></i>
+                                                                                <i class="fa fa-pie-chart"></i>
+                                                                                <i class="fa fa-search-plus"></i>
+                                                                                <i class="fa fa-my-release"></i>
+                                                                                <i class="fa fa-personnel-pos"></i>
+                                                                                <i class="fa fa-directory-mana"></i>
+                                                                                <i class="fa fa-expired-doc "></i>
+                                                                                <i class="fa fa-files-o"></i>
+                                                                                <i class="fa fa-historical-doc"></i>
+                                                                                <i class="fa fa-invalid-doc"></i>
+                                                                                <i class="fa fa-loan-o"></i>
+                                                                                <i class="fa fa-receiving-doc"></i>
+                                                                                <i class="fa fa-attendance-mana"></i>
+                                                                                <i class="fa fa-cards-mana"></i>
+                                                                                <i class="fa fa-salary-mana"></i>
+                                                                                <i class="fa fa-social-ins"></i>
+                                                                                <i class="fa fa-training-mana"></i>
+                                                                                <i class="fa fa-custom-mai"></i>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th><em>HTML代码：</em></th>
+                                                                <td>
+                                                                    <textarea style="display:none" id="htmlContent" name="htmlContent"></textarea>
+                                                                    <a href="javascript:void(0)" class="wh-choose-info-btn" onclick="openWin({url:'/defaultroot/platform/portal/portlet/conf/editor.jsp',winName:'HTML编辑器',width:600,height:400});">打开编辑</a>
+                                                                </td>
+                                                                <th><em>示例：</em></th>
+                                                                <td>
+                                                                    <select id="example" name="example" onchange="chooseType()">
+                                                                        <option value="0">请选择</option>
+                                                                        <option value="1">天气</option>
+                                                                        <option value="2">万年历</option>
+                                                                    </select>
+                                                                </td>
+                                                            </tr>
+    
+                                                            <tr>
+                                                                <th>
+                                                                    <em>标题字体颜色：</em>
+                                                                </th>
+                                                                <td>
+                                                                    <div class="wh-choose-input-w-box">
+                                                                        <input type="text" class="wh-choose-input-color" id="titleColor" name="titleColor" value="" maxlength="7" style="color:">
+                                                                        <a href="javascript:void(0)" class="wh-choose-color-a wh-backstage-title-bg" dest="titleColor"><img src="/defaultroot/images/ver113/choose-color.jpg" width="23" height="24" alt=""></a>
+                                                                    </div>
+                                                                </td>
+                                                                <th><em>内容背景颜色：</em></th>
+                                                                <td>
+                                                                    <div class="wh-choose-input-w-box">
+                                                                        <input type="text" class="wh-choose-input-color" id="contentBgColor" name="contentBgColor" value="" maxlength="7" style="color:">
+                                                                        <a href="javascript:void(0)" class="wh-choose-color-a wh-backstage-content-bg" dest="contentBgColor"><img src="/defaultroot/images/ver113/choose-color.jpg" width="23" height="24" alt=""></a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    <em>窗口高度：</em>
+                                                                </th>
+                                                                <td colspan="3">
+                                                                    <div class="wh-choose-input-w-box clearfix">
+                                                                        <a href="javascript:void(0)" class="wh-choose-input-a wh-backstage-auto-height" style="background: rgb(226, 226, 226); color: rgb(80, 80, 80);">自动高度</a>
+                                                                        <input type="text" class="wh-choose-input-text wh-auto-height-input" id="windowHeight" name="windowHeight" value="" maxlength="3" readonly="readonly">
+                                                                        <input type="hidden" id="autoHeight" name="autoHeight" value="auto">
+                                                                        <script type="text/javascript">
+                                                                        <!--
+                                                                        $(function() {
+                                                                            /*自动高度*/
+                                                                            var _autoHeight = $('#autoHeight').val();
+                                                                            if (_autoHeight == 'auto') {
+                                                                                $(".wh-auto-height-input").attr("readonly", "true");
+                                                                                $(".wh-backstage-auto-height").css({ background: "#e2e2e2", color: "#505050" });
+                                                                            } else {
+                                                                                $(".wh-auto-height-input").removeAttr("readonly");
+                                                                                $(".wh-backstage-auto-height").css({ background: "#666", color: "#fff" });
+                                                                                $('#autoHeight').val('');
+                                                                            }
+                                                                        });
+                                                                        //-->
+                                                                        </script>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th><em>窗口显示项：</em></th>
+                                                                <td colspan="3">
+                                                                    <div class="wh-choose-check">
+                                                                        <input type="checkbox" id="hasTitle" name="hasTitle" value="1" checked="">
+                                                                        <label for="hasTitle">&nbsp;显示标题栏</label>
+                                                                        <input type="checkbox" id="hasToolbar" name="hasToolbar" value="1" checked="">
+                                                                        <label for="hasToolbar">&nbsp;显示工具按钮</label>
+                                                                        <input type="checkbox" id="hasBorder" name="hasBorder" value="1" checked="">
+                                                                        <label for="hasBorder">&nbsp;显示边框</label>
+                                                                        <input type="checkbox" id="hasPadding" name="hasPadding" value="1">
+                                                                        <label for="hasPadding">&nbsp;移除内边距</label>
+                                                                        <input type="checkbox" id="hasBorderRadius" name="hasBorderRadius" value="1">
+                                                                        <label for="hasBorderRadius">&nbsp;圆角边框</label>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th><em>扩展样式：</em></th>
+                                                                <td colspan="3">
+                                                                    <div class="wh-choose-input">
+                                                                        <input type="text" id="cssExtend" class="wh-choose-input-wid" name="cssExtend" value="">小写字母开头,可组合数字和"-"
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                                <input type="hidden" name="portletSettingId" value="3889">
+                                                <input type="hidden" name="type" value="html">
+                                                <input type="hidden" name="layoutId" value="207">
+                                                <input type="hidden" name="portletId" value="46">
+                                                <script language="JavaScript">
+                                                <!--
+                                                $(function() {
+                                                    /*自动高度*/
+                                                    $(".wh-backstage-auto-height").click(function() {
+                                                        if ($(".wh-auto-height-input").prop("readonly") == true) {
+                                                            $(".wh-auto-height-input").removeAttr("readonly");
+                                                            $(this).css({ background: "#666", color: "#fff" });
+                                                            $('#autoHeight').val('');
+                                                        } else {
+                                                            $(".wh-auto-height-input").attr("readonly", "true");
+                                                            $(this).css({ background: "#e2e2e2", color: "#505050" });
+                                                            $('#autoHeight').val('auto');
+                                                        }
+                                                    });
+
+
+                                                    /*点击图标显示图标集合*/
+                                                    var dataIcon = $('div > i[data-icon=true]');
+                                                    $("div.wh-choose-info-text i").click(function() {
+                                                        $(".wh-choose-tips").toggle(100);
+
+                                                        var cls = $(this).attr('class');
+                                                        var selIcon = cls.split(" ")[1];
+                                                        dataIcon.attr('class', 'fa ' + selIcon);
+
+                                                        if (selIcon == 'fa-dotted-circle') selIcon = ''; //不使用图标
+                                                        $('#iconFont').val(selIcon);
+
+                                                        return false;
+                                                    });
+
+                                                    /* 记录数加减*/
+                                                    $("#windowHeight").attr("maxlength", 3);
+                                                    $("#limitChar").attr("maxlength", 2).attr("data-minval", 1);
+                                                    if ($("#limitChar").attr("data-maxval") == null) {
+                                                        $("#limitChar").attr("data-maxval", 99);
+                                                    }
+                                                    $("#limitNum").attr("maxlength", 2).attr("data-minval", 1);
+                                                    if ($("#limitNum").attr("data-maxval") == null) {
+                                                        $("#limitNum").attr("data-maxval", 20);
+                                                    }
+                                                    $("#imgNum").attr("maxlength", 2).attr("data-maxval", 5).attr("data-minval", 1);
+
+                                                    /* 校验最大最小值*/
+                                                    $("#windowHeight, #limitChar, #limitNum, #imgNum").bind("input focusin change propertychange blur", function() {
+                                                        //20160531 -by jqq 参数改成true，过滤掉“-”符号，即非负数
+                                                        change(this, "integer", true);
+                                                        var val = $(this).val();
+                                                        var maxval = $(this).attr("data-maxval");
+                                                        var minval = $(this).attr("data-minval");
+                                                        if (maxval) {
+                                                            if (parseInt(val, 10) > parseInt(maxval, 10)) {
+                                                                whir_alert("数值最大为" + maxval);
+                                                                $(this).val(maxval);
+                                                                return;
+                                                            }
+                                                        }
+                                                        if (minval) {
+                                                            if (parseInt(val, 10) < parseInt(minval, 10)) {
+                                                                whir_alert("数值最小为" + minval);
+                                                                $(this).val(minval);
+                                                                return;
+                                                            }
+                                                        }
+                                                    });
+
+                                                });
+
+                                                function changeInfoType(val) {
+                                                    if (val == '0' || val == '1') {
+                                                        $("#imgNumTr").hide();
+                                                    } else {
+                                                        $("#imgNumTr").show();
+                                                    }
+                                                }
+
+                                                function setTitleDefaultColor(color) {
+                                                    var def_color = DEFAULT_COLOR[PORTAL_SKIN];
+                                                    $("#titleColor").val(def_color);
+                                                    $("#titleColor").css('backgroundColor', def_color);
+                                                }
+
+                                                function changeFielDealTitle(obj) {
+                                                    var txt = obj.options[obj.selectedIndex].text;
+                                                    $('#title').val(txt);
+                                                }
+
+                                                function addCategory(obj) {
+                                                    var table = $('#categoryTable')
+                                                    var tr = table.find('tr');
+                                                    if (tr.length < 4) {
+                                                        var newTR = $('<tr></tr>').insertAfter(tr[tr.length - 1])
+                                                        var td = $(tr.html()).appendTo(newTR);
+                                                    } else {
+                                                        whir_alert("最多只能添加4个", null, api);
+                                                    }
+                                                }
+
+                                                function removeCategory(obj) {
+                                                    var table = $('#categoryTable')
+                                                    var tr = table.find('tr');
+                                                    if (tr.length > 1) {
+                                                        $(obj.parentNode.parentNode).remove();
+                                                    }
+                                                }
+
+                                                function cancelSetting() {
+                                                    $('#portletSetting').window('close');
+                                                }
+
+                                                //api.button({name:'保存',focus:true,callback:function(){saveSetting();}},{name: '取消',callback: function(){api.close();}});
+
+                                                function saveSetting() {
+                                                    var layoutId = $('input[name=layoutId]').val();
+                                                    var portletId = $('input[name=portletId]').val();
+                                                    var portletSettingId = $('input[name=portletSettingId]').val();
+                                                    var type = $('input[name=type]').val();
+                                                    var title = $('input[name=title]').val();
+                                                    var windowHeight = $('input[name=windowHeight]').val();
+                                                    var iconCls = $('input[name=iconCls]').val();
+                                                    var iconFont = $('input[name=iconFont]').val();
+                                                    var p = $('#portletSettingId_' + portletSettingId);
+
+                                                    var pattern = new RegExp("[`~!@#$^&*()=|{}':;',\\[\\].<>/?~！\"@#￥……&*（）\\\\——;—|{}【】‘；：”“'。，、？]");
+                                                    if (pattern.test(title)) {
+                                                        whir_alert("标题名称不能输入特殊字符！");
+                                                        return false;
+                                                    }
+
+                                                    if (typeof validateInput == 'function') {
+                                                        var flag = validateInput();
+                                                        if (!flag) {
+                                                            return false;
+                                                        }
+                                                    }
+
+                                                    if (windowHeight < 0) {
+                                                        whir_alert("窗口高度不能为负数！");
+                                                        return false;
+                                                    }
+                                                    //20160526 -by jqq 扩展样式输入正则匹配
+                                                    var extendStr = $('#cssExtend').val();
+                                                    var reg = /^[a-z]+[a-zA-Z0-9-]*$/;
+                                                    if (extendStr != null && extendStr != '' && !reg.test(extendStr)) {
+                                                        whir_alert("请输入以小写字母开头，可包含数字,字母与-的样式字符串");
+                                                        return false;
+                                                    }
+                                                    //20170516 -by jqq 针对流程场景名称校验
+                                                    if (type == "processscene") {
+                                                        var sceneName = $("#sceneName").val();
+                                                        if (pattern.test(sceneName)) {
+                                                            whir_alert("场景名称不能输入特殊字符！");
+                                                            return false;
+                                                        }
+                                                    }
+                                                    //针对个人卡片高度设置过低的处理
+                                                    if (type == "userinfo") {
+                                                        if (windowHeight < 227) {
+                                                            $('input[name=autoHeight]').val("auto");
+                                                        }
+                                                    }
+                                                    //20160429 -by jqq针对自定义模块的特殊处理
+                                                    var titleCaseId = "";
+                                                    var linkCaseId = "";
+                                                    var remindCaseId = "";
+                                                    if (type == "definemodule") {
+                                                        var classId = $("select[name=classId]").val();
+                                                        if (classId == null || classId == "" || classId == "-1") {
+                                                            whir_alert("请选择一个自定义模块。");
+                                                            return false;
+                                                        }
+
+                                                        //先判断是否有方案caseId，有的话先删除
+                                                        var titleCaseId2 = $("#titleCaseId").val();
+                                                        var linkCaseId2 = $("#linkCaseId").val();
+                                                        var remindCaseId2 = $("#remindCaseId").val();
+                                                        titleCaseId2 = titleCaseId2 == null ? "" : titleCaseId2;
+                                                        linkCaseId2 = linkCaseId2 == null ? "" : linkCaseId2;
+                                                        remindCaseId2 = remindCaseId2 == null ? "" : remindCaseId2;
+                                                        //执行删除方案
+                                                        if (titleCaseId2 != "") {
+                                                            ajaxForSync('PortletData!deleteCase.action?caseId=' + titleCaseId2);
+                                                        }
+                                                        if (linkCaseId2 != "") {
+                                                            ajaxForSync('PortletData!deleteCase.action?caseId=' + linkCaseId2);
+                                                        }
+                                                        if (remindCaseId2 != "") {
+                                                            ajaxForSync('PortletData!deleteCase.action?caseId=' + remindCaseId2);
+                                                        }
+                                                        //保存自定义模块的方案（列表标题，链接字段，提醒字段）
+                                                        var domainId = "0";
+                                                        var tableId = "";
+                                                        var sfields = "";
+                                                        //var classId = $("select[name=classId]").val();
+                                                        if (classId != null && !("" == classId)) {
+                                                            var idArr = classId.split("|");
+                                                            tableId = idArr[2];
+                                                        }
+                                                        //选择的字段id用逗号隔开 字符串
+                                                        var selectedField = "";
+                                                        $('select[name=selectedField] option').each(function() {
+                                                            var tmp = $(this).val();
+                                                            tmp = tmp.substring(0, tmp.indexOf("|"));
+                                                            selectedField += tmp + ',';
+                                                        });
+                                                        //未选中的展示字段id用逗号隔开 字符串
+                                                        var unselectedField = "";
+                                                        $('select[name=field] option').each(function() {
+                                                            var tmp2 = $(this).val();
+                                                            tmp2 = tmp2.substring(0, tmp2.indexOf("|"));
+                                                            unselectedField += tmp2 + ',';
+                                                        });
+                                                        //最终选择的列表字段
+                                                        /*if(selectedField != null && selectedField != ""){
+                                                            sfields = selectedField.substring(0,selectedField.length - 1);
+                                                        }else{
+                                                            sfields = unselectedField.substring(0,unselectedField.length - 1);
+                                                        }*/
+                                                        if (selectedField != null && selectedField != "") {
+                                                            sfields = selectedField.substring(0, selectedField.length - 1);
+                                                            //列表方案
+                                                            var portallistCase = ajaxForSync('PortletData!saveCase.action?type=portal_list&tableId=' + tableId + '&sfields=' + sfields + '&domainId=' + domainId);
+                                                            titleCaseId = eval("(" + portallistCase + ")").result;
+                                                        }
+                                                        //链接字段
+                                                        var linkField = $('select[name=linkField]').val();
+                                                        //linkField = linkField.substring(0,linkField.indexOf("|"));
+                                                        if (linkField != null && linkField != "" && linkField != "-1|-1|--请选择--") {
+                                                            sfields = linkField.substring(0, linkField.indexOf("|"));
+                                                            console.log("link:" + sfields);
+                                                            //链接方案
+                                                            var portallinkCase = ajaxForSync('PortletData!saveCase.action?type=portal_link&tableId=' + tableId + '&sfields=' + sfields + '&domainId=' + domainId);
+                                                            linkCaseId = eval("(" + portallinkCase + ")").result;
+                                                        }
+                                                        //提醒字段
+                                                        var remindField = $('select[name=remindField]').val();
+                                                        //remindField = remindField.substring(0,remindField.indexOf("|"));
+                                                        if (remindField != null && remindField != "" && remindField != "-1|-1|--请选择--") {
+                                                            sfields = remindField.substring(0, remindField.indexOf("|"));
+                                                            console.log("remind:" + sfields);
+                                                            //提醒方案
+                                                            var portalremindCase = ajaxForSync('PortletData!saveCase.action?type=portal_remind&tableId=' + tableId + '&sfields=' + sfields + '&domainId=' + domainId);
+                                                            remindCaseId = eval("(" + portalremindCase + ")").result;
+                                                        }
+                                                    }
+                                                    //20170704 -by jqq 快捷入口特殊处理
+                                                    var jsonConfig = '';
+                                                    if (type == "shortcut") {
+                                                        this.serializedData = _.map($('#grid-stack-' + portletSettingId).find('.grid-stack-item'), function(el) {
+                                                            el = $(el);
+                                                            var node = el.data('_gridstack_node');
+                                                            var module_id = el.attr('id'); //grid-home12345
+                                                            var module_name = el.find('span').text();
+                                                            var module_link = el.attr('data-url');
+                                                            var module_menuId = el.attr('data-menuid');
+                                                            var module_faName = el.attr('data-faname');
+                                                            module_id = module_id.replace(module_menuId, '');
+                                                            return {
+                                                                x: node.x,
+                                                                y: node.y,
+                                                                width: node.width,
+                                                                height: node.height,
+                                                                id: module_id,
+                                                                name: module_name,
+                                                                link: module_link,
+                                                                menuId: module_menuId,
+                                                                faName: module_faName
+                                                            };
+                                                        }, this);
+                                                        //$('#saved-data').val(JSON.stringify(this.serializedData, null, '    '));
+                                                        jsonConfig = JSON.stringify(this.serializedData);
+                                                        //alert(jsonConfig);
+                                                    }
+
+                                                    var opts = $.extend({}, { layoutId: layoutId, portletId: portletId, portletSettingId: portletSettingId, type: type, iconCls: iconCls, title: title, flag: 1, iconFont: iconFont });
+
+                                                    //20160429 -by jqq针对自定义模块的特殊处理
+                                                    if (type == "definemodule") {
+                                                        //将保存方案生成的方案id保存到 自定义模块portal 的配置xml
+                                                        opts = $.extend({}, { layoutId: layoutId, portletId: portletId, portletSettingId: portletSettingId, type: type, iconCls: iconCls, title: title, flag: 1, iconFont: iconFont, titleCaseId: titleCaseId, linkCaseId: linkCaseId, remindCaseId: remindCaseId });
+                                                    }
+                                                    //20170704 -by jqq 快捷入口特殊处理
+                                                    if (type == "shortcut") {
+                                                        //将选择的快捷入口模块位置大小等信息保存到 快捷入口portal 的配置xml
+                                                        opts = $.extend({}, { layoutId: layoutId, portletId: portletId, portletSettingId: portletSettingId, type: type, iconCls: iconCls, title: title, flag: 1, iconFont: iconFont, jsonConfig: jsonConfig });
+                                                        //alert(opts.jsonConfig);
+                                                    }
+
+                                                    //var xmlDocument = generateSettingsXml(p, opts);
+                                                    //var xmldom=null ;
+                                                    //if(navigator.userAgent.toLowerCase().indexOf("msie")!=-1){ 
+                                                    //    xmldom=new ActiveXObject("Microsoft.XMLDOM"); 
+                                                    //    xmldom.loadXML(xmlDocument); 
+                                                    //} else {
+                                                    var xmldom = generateSettingsXml(p, opts); //new DOMParser().parseFromString(xmlDocument,"text/xml");
+                                                    //alert(xmldom);
+                                                    //}
+                                                    var path = PORTLET_SETTING_SAVE_URL;
+
+                                                    $.ajax({
+                                                        type: "POST",
+                                                        url: path + "?action=saveXml&portletSettingId=" + portletSettingId + "&type=" + type + "&layoutId=" + layoutId + "&title=" + encodeURIComponent(title),
+                                                        processData: false,
+                                                        data: "xml=" + encodeURIComponent(xmldom),
+                                                        success: function(response) {
+                                                            whir_alert("保存成功。");
+                                                            $.each(PORTLET_TYPES.split(','), function(i, ptype) {
+                                                                if (type == ptype) {
+                                                                    var fn = eval(ptype);
+                                                                    if (fn) {
+                                                                        if ($.isFunction(fn.refresh)) {
+                                                                            var pid = p.attr('id');
+                                                                            if (!opts.titleColor || opts.titleColor == '') {
+                                                                                opts = $.extend(opts, { titleColor: DEFAULT_COLOR[PORTAL_SKIN] });
+                                                                            }
+                                                                            fn.refresh($('#content_' + pid), opts);
+                                                                            $('#refresh_' + pid).unbind('click');
+                                                                            $('#refresh_' + pid).bind('click', function() {
+                                                                                fn.refresh($('#content_' + pid), opts);
+                                                                            });
+                                                                        }
+                                                                    }
+                                                                    return;
+                                                                }
+                                                            });
+                                                        },
+                                                        error: function(XMLHttpRequest, textStatus, errorThrown) {
+                                                            alert(XMLHttpRequest);
+                                                            alert(textStatus);
+                                                            alert(errorThrown);
+                                                        }
+                                                    });
+
+                                                    return true;
+                                                    //$('#portletSetting').window('close');
+                                                }
+
+                                                if (!document.all) {
+                                                    XMLDocument.prototype.__defineGetter__("xml", function() { return new XMLSerializer().serializeToString(this) });
+                                                }
+
+                                                function setIconCls(pid, opts) {
+                                                    var cls = '';
+                                                    if (opts.iconFont != '') cls = 'fa ' + opts.iconFont;
+                                                    var _i = $('#i_' + pid);
+                                                    if (_i) {
+                                                        if (cls == '') {
+                                                            _i.removeClass();
+                                                        } else {
+                                                            _i.addClass(cls);
+                                                        }
+                                                    }
+                                                }
+
+                                                function generateSettingsXml(target, opts) {
+                                                    var xmlDocument = '';
+                                                    xmlDocument += '<?xml version="1.0" encoding="UTF-8"?>';
+                                                    xmlDocument += '<portletSettings>';
+
+                                                    var titleColor = $('input[name=titleColor]').val();
+                                                    var contentBgColor = $('input[name=contentBgColor]').val();
+
+                                                    var pid = $(target).attr('id');
+
+                                                    if (opts.title != '') {
+
+                                                        var jsonData = [{
+                                                            ulCss: "",
+                                                            data: [
+                                                                //{ title: opts.title, url:'', onclick:'', defaultSelected: 'on', liCss:'', titleColor:titleColor}
+                                                            ]
+                                                        }];
+                                                        //Portlet.setPortletDataTitle('3889', jsonData);
+                                                    }
+                                                    xmlDocument += '<title><![CDATA[' + opts.title + ']]></title>';
+
+                                                    $("#header_" + pid).attr('data-title', opts.title);
+
+                                                    var _title = opts.title;
+                                                    if (opts.iconFont && opts.iconFont != '') {
+                                                        _title = '<i id="i_' + pid + '" class="fa ' + opts.iconFont + '"></i>' + _title;
+                                                    }
+                                                    $("#t_" + pid).html(_title);
+
+                                                    if (titleColor != '') {
+                                                        $('#t_' + pid).css('color', titleColor);
+                                                    }
+                                                    xmlDocument += '<titleColor><![CDATA[' + titleColor + ']]></titleColor>';
+
+                                                    $("#header_" + pid).attr('data-color', titleColor);
+
+                                                    xmlDocument += '<iconCls>' + opts.iconCls + '</iconCls>';
+
+                                                    xmlDocument += '<iconFont>' + opts.iconFont + '</iconFont>';
+                                                    //20160503 -by jqq 自定义模块
+                                                    if (opts.titleCaseId != null) {
+                                                        xmlDocument += '<titleCaseId>' + opts.titleCaseId + '</titleCaseId>';
+                                                        xmlDocument += '<linkCaseId>' + opts.linkCaseId + '</linkCaseId>';
+                                                        xmlDocument += '<remindCaseId>' + opts.remindCaseId + '</remindCaseId>';
+                                                    }
+                                                    //20170704 -by jqq 快捷入口
+                                                    if (opts.jsonConfig != null) {
+                                                        xmlDocument += '<jsonConfig><![CDATA[' + opts.jsonConfig + ']]></jsonConfig>';
+                                                    }
+
+                                                    $("#header_" + pid).attr('data-iconFont', opts.iconFont);
+
+                                                    //设置图标
+                                                    //setIconCls(pid, opts);
+
+                                                    if (contentBgColor != '') {
+                                                        $('#content_' + pid).css('background', contentBgColor);
+                                                    } else {
+                                                        $('#content_' + pid).css('background', '');
+                                                    }
+                                                    xmlDocument += '<contentBgColor><![CDATA[' + contentBgColor + ']]></contentBgColor>';
+
+                                                    var windowHeight = $('input[name=windowHeight]').val();
+                                                    var autoHeight = $('#autoHeight').val();
+                                                    if (autoHeight == 'auto') {
+                                                        windowHeight = autoHeight; //自动高度
+                                                    }
+                                                    xmlDocument += '<windowHeight><![CDATA[' + windowHeight + ']]></windowHeight>';
+
+                                                    var dateFmt = $('select[name=dateFmt]').val();
+                                                    if (dateFmt != '') { //时间格式
+                                                        xmlDocument += '<dateFmt>' + (dateFmt ? dateFmt : '') + '</dateFmt>';
+                                                    }
+                                                    //20170810 -by jqq 时间展示控制
+                                                    var displayTimes = $('input[name=displayTimes]:checked').val();
+                                                    xmlDocument += '<displayTimes>' + (displayTimes ? displayTimes : '') + '</displayTimes>';
+
+                                                    opts = $.extend(opts, { height: windowHeight, titleColor: titleColor });
+
+                                                    var _height = opts.height;
+                                                    try {
+                                                        _height = parseInt(opts.height, 10);
+                                                    } catch (e) {}
+
+                                                    //设置窗口高度
+                                                    $('#content_' + pid).css('height', opts.height);
+
+                                                    $.each(PORTLET_TYPES.split(','), function(i, ptype) {
+                                                        if (opts.type == ptype) {
+                                                            var fn = eval(ptype);
+                                                            if (fn) {
+                                                                if ($.isFunction(fn.getSettingsXml)) {
+                                                                    xmlDocument += fn.getSettingsXml(target, opts);
+                                                                }
+                                                            }
+                                                            return;
+                                                        }
+                                                    });
+
+                                                    var hasTitle = $('input[name=hasTitle]:checked').val();
+                                                    var hasToolbar = $('input[name=hasToolbar]:checked').val();
+                                                    var hasBorder = $('input[name=hasBorder]:checked').val();
+                                                    //20160524 -by jqq 增加内边距/圆角等样式控制
+                                                    var hasPadding = $('input[name=hasPadding]:checked').val();
+                                                    var hasBorderRadius = $('input[name=hasBorderRadius]:checked').val();
+                                                    var cssExtend = $('input[name=cssExtend]').val();
+                                                    //console.log("保存时候：hasPadding："+ hasPadding + ";hasBorderRadius:"+hasBorderRadius);
+                                                    //console.log("保存时候：cssExtend："+ cssExtend);
+
+                                                    xmlDocument += '<hasTitle>' + (hasTitle ? hasTitle : '') + '</hasTitle>';
+                                                    xmlDocument += '<hasToolbar>' + (hasToolbar ? hasToolbar : '') + '</hasToolbar>';
+                                                    xmlDocument += '<hasBorder>' + (hasBorder ? hasBorder : '') + '</hasBorder>';
+                                                    xmlDocument += '<hasPadding>' + (hasPadding ? hasPadding : '') + '</hasPadding>';
+                                                    xmlDocument += '<hasBorderRadius>' + (hasBorderRadius ? hasBorderRadius : '') + '</hasBorderRadius>';
+                                                    xmlDocument += '<cssExtend>' + (cssExtend ? cssExtend : '') + '</cssExtend>';
+
+                                                    xmlDocument += '</portletSettings>';
+
+                                                    return xmlDocument;
+                                                }
+
+                                                function saveAppend() {
+                                                    $("#upFileFrm").submit();
+                                                }
+
+                                                function _managerFile(path, portletSettingId) {
+                                                    $('#fileUrl').val('');
+                                                    //var param = "&path="+path;
+                                                    //window.open("/defaultroot/platform/portal/layout/common/manageFile.jsp?portletSettingId="+portletSettingId,"","TOP=0,LEFT=0,scrollbars=yes,resizable=no,width=400,height=300");
+                                                    openWin({ url: '/defaultroot/platform/portal/layout/common/manageFile.jsp?portletSettingId=' + portletSettingId, winName: '文件管理', width: 600, height: 300 });
+                                                }
+
+                                                function afterUpload(val) {
+                                                    document.getElementById("fileNames").value += val + '|';
+                                                    document.getElementById("fileUrl").value = '';
+                                                    whir_alert('上传成功', null, api);
+                                                }
+
+                                                function checkStack(obj) {
+                                                    var b = /^[0-9a-zA-Z,]*$/g;
+                                                    if (!b.test(obj.value)) {
+                                                        whir_alert("股票代码只能是字母与数字组成", null, api);
+                                                    }
+                                                }
+                                                //-->
+                                                </script>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td colspan="2">
+                                            <div class="ui_buttons">
+                                                <input type="button" value="保存" class="ui_state_highlight">
+                                                <input type="button" value="取消">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                    <td class="ui_r"></td>
+                </tr>
+                <tr>
+                    <td class="ui_lb"></td>
+                    <td class="ui_b"></td>
+                    <td class="ui_rb" style="cursor: auto;"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+
+<script type="text/javascript">
+      
+  var parentdiv='<table class="tablebox" cellpadding="0" cellspacing="0" width="100%"><tbody><tr> <th><em>页签名称1：</em></th><td colspan="3"><div class="wh-choose-info-text wh-choose-info-text-box"> <input type="text" value="" class="wh-choose-input-tabtitle"></div></td></tr> <tr> <th><em>筛选条件：</em></th><td colspan="3"><div class="wh-choose-info-text wh-choose-info-textarea-box"> <textarea class="wh-choose-textarea"></textarea> <i class="fa fa-times delate" style="color: red" onclick="delate(this)"></i> </div></td>  </tr> </tbody></table>'; 
+
+
+   
+ $(".add-tab").click(function(){
+   $(".html-selectbox>td").append(parentdiv); 
+ })
+
+
+ function delate(object){
+     $(object).parents(".tablebox").hide();
+ }
+   
+</script>
+
+</html>
