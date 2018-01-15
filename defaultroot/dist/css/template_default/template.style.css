@@ -2061,8 +2061,6 @@ gway-switch-btn.wh-wrapper.wh-s-wrapper {
   background: #f34040;
   color: #fff;
   text-align: center;
-  width: inherit;
-  padding: 3px 2px !important;
 }
 /* Header System Setting */
 .wh-sys-notice-list {
@@ -2676,4 +2674,8 @@ gway-switch-btn.wh-wrapper.wh-s-wrapper {
 /* 针对首页灰色背景 */
 .wh-header-home {
   background: #ededed;
+}
+.wh-hd-r-nav .wh-sys-warn-num {
+  width: inherit;
+  padding: 3px 2px !important;
 }

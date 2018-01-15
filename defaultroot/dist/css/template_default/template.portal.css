@@ -7277,16 +7277,19 @@ h5 {
 .portlet-define-setbox .portlet-define-settime div {
   color: #bcbcbc;
 }
-.dk-deal .wh-portal-i-item-list a {
-  max-width: 93%;
-}
 .wh-portal-i-item-list .new-icon i.fa.fa-new.fa-ji {
   width: 16px;
   background: url(../../../rd/img/ji.png) center no-repeat;
 }
-.wh-portal-i-item-list .new-icon i.fa.fa-new:before {
+.wh-portal-i-item-list .fa.fa-new:before {
   content: none;
 }
 .wh-choose-info-type .wh-choose-info-processimg {
   background: url(../../../template/images/common/style-processimg.png) center top no-repeat;
+}
+.wh-portal-info-box.dk-deal .wh-portal-i-item-list a {
+  max-width: 93%;
+}
+.wh-portal-info-box.dk-deal .wh-portal-i-item-list a {
+  width: 95%;
 }
