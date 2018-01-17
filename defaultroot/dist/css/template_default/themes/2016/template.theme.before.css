@@ -1120,6 +1120,9 @@
 .theme-red .portlet-define-setbox td a:hover {
   color: #cd2500;
 }
+.theme-red .tongji .counts span em {
+  color: #cd2500;
+}
 .theme-pink {
   /* 北电控 */
 }
@@ -2240,6 +2243,9 @@
 }
 .theme-pink .portlet-define-setbox td a:focus,
 .theme-pink .portlet-define-setbox td a:hover {
+  color: #dc4fad;
+}
+.theme-pink .tongji .counts span em {
   color: #dc4fad;
 }
 .theme-darkred {
@@ -3364,6 +3370,9 @@
 .theme-darkred .portlet-define-setbox td a:hover {
   color: #ad193d;
 }
+.theme-darkred .tongji .counts span em {
+  color: #ad193d;
+}
 .theme-orange {
   /* 北电控 */
 }
@@ -4484,6 +4493,9 @@
 }
 .theme-orange .portlet-define-setbox td a:focus,
 .theme-orange .portlet-define-setbox td a:hover {
+  color: #F27521;
+}
+.theme-orange .tongji .counts span em {
   color: #F27521;
 }
 .theme-lightgreen {
@@ -5608,6 +5620,9 @@
 .theme-lightgreen .portlet-define-setbox td a:hover {
   color: #82ba01;
 }
+.theme-lightgreen .tongji .counts span em {
+  color: #82ba01;
+}
 .theme-green {
   /* 北电控 */
 }
@@ -6728,6 +6743,9 @@
 }
 .theme-green .portlet-define-setbox td a:focus,
 .theme-green .portlet-define-setbox td a:hover {
+  color: #008b18;
+}
+.theme-green .tongji .counts span em {
   color: #008b18;
 }
 .theme-cyan {
@@ -7852,6 +7870,9 @@
 .theme-cyan .portlet-define-setbox td a:hover {
   color: #03b3b1;
 }
+.theme-cyan .tongji .counts span em {
+  color: #03b3b1;
+}
 .theme-seablue {
   /* 北电控 */
 }
@@ -8974,6 +8995,9 @@
 .theme-seablue .portlet-define-setbox td a:hover {
   color: #00829a;
 }
+.theme-seablue .tongji .counts span em {
+  color: #00829a;
+}
 .theme-skyblue {
   /* 北电控 */
 }
@@ -10094,6 +10118,9 @@
 }
 .theme-skyblue .portlet-define-setbox td a:focus,
 .theme-skyblue .portlet-define-setbox td a:hover {
+  color: #5cb2ff;
+}
+.theme-skyblue .tongji .counts span em {
   color: #5cb2ff;
 }
 /* theme-green 左侧菜单颜色修改 */

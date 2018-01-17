@@ -1120,6 +1120,9 @@
 .theme-blue .portlet-define-setbox td a:hover {
   color: #0073c6;
 }
+.theme-blue .tongji .counts span em {
+  color: #0073c6;
+}
 .theme-violet {
   /*     .wh-left-menuList {
   border-top-color: @global-color;
@@ -2240,6 +2243,9 @@
 }
 .theme-violet .portlet-define-setbox td a:focus,
 .theme-violet .portlet-define-setbox td a:hover {
+  color: #4617b5;
+}
+.theme-violet .tongji .counts span em {
   color: #4617b5;
 }
 .theme-purple {
@@ -3364,6 +3370,9 @@
 .theme-purple .portlet-define-setbox td a:hover {
   color: #8c0095;
 }
+.theme-purple .tongji .counts span em {
+  color: #8c0095;
+}
 .theme-indigo {
   /*     .wh-left-menuList {
   border-top-color: @global-color;
@@ -4484,6 +4493,9 @@
 }
 .theme-indigo .portlet-define-setbox td a:focus,
 .theme-indigo .portlet-define-setbox td a:hover {
+  color: #004b8c;
+}
+.theme-indigo .tongji .counts span em {
   color: #004b8c;
 }
 .theme-darkblue {
@@ -5608,6 +5620,9 @@
 .theme-darkblue .portlet-define-setbox td a:hover {
   color: #001941;
 }
+.theme-darkblue .tongji .counts span em {
+  color: #001941;
+}
 .theme-maroon {
   /*     .wh-left-menuList {
   border-top-color: @global-color;
@@ -6728,6 +6743,9 @@
 }
 .theme-maroon .portlet-define-setbox td a:focus,
 .theme-maroon .portlet-define-setbox td a:hover {
+  color: #580000;
+}
+.theme-maroon .tongji .counts span em {
   color: #580000;
 }
 .theme-brown {
@@ -7852,6 +7870,9 @@
 .theme-brown .portlet-define-setbox td a:hover {
   color: #380001;
 }
+.theme-brown .tongji .counts span em {
+  color: #380001;
+}
 .theme-gray {
   /*     .wh-left-menuList {
   border-top-color: @global-color;
@@ -8974,6 +8995,9 @@
 .theme-gray .portlet-define-setbox td a:hover {
   color: #585858;
 }
+.theme-gray .tongji .counts span em {
+  color: #585858;
+}
 .theme-black {
   /*     .wh-left-menuList {
   border-top-color: @global-color;
@@ -10094,6 +10118,9 @@
 }
 .theme-black .portlet-define-setbox td a:focus,
 .theme-black .portlet-define-setbox td a:hover {
+  color: #333;
+}
+.theme-black .tongji .counts span em {
   color: #333;
 }
 /* theme-green 左侧菜单颜色修改 */

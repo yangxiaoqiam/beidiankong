@@ -379,6 +379,9 @@ body.size-big {
 .size-small .portlet-define-setbox td div {
   font-size: 12px;
 }
+.size-small div.wh-portal-slide-newwork .wh-portal-i-item-list .office {
+  font-size: 12px;
+}
 /*14号  大尺寸*/
 .size-big {
   /* 新增列表 */
@@ -752,6 +755,9 @@ body.size-big {
 }
 .size-big .portlet-define-setbox td a,
 .size-big .portlet-define-setbox td div {
+  font-size: 14px;
+}
+.size-big div.wh-portal-slide-newwork .wh-portal-i-item-list .office {
   font-size: 14px;
 }
 /*16号  大尺寸*/
@@ -1191,5 +1197,8 @@ body.size-big {
 }
 .size-big16 .portlet-define-setbox td a,
 .size-big16 .portlet-define-setbox td div {
+  font-size: 16px;
+}
+.size-big16 div.wh-portal-slide-newwork .wh-portal-i-item-list .office {
   font-size: 16px;
 }

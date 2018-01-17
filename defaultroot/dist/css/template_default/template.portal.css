@@ -7290,3 +7290,36 @@ h5 {
 .wh-portal-info-box.dk-deal .wh-portal-i-item-list a {
   max-width: 93%;
 }
+/* 新会portal */
+div.wh-portal-slide-newwork .wh-portal-i-item-list {
+  width: auto;
+}
+div.wh-portal-slide-newwork .wh-portal-i-item-list a {
+  max-width: 64%;
+}
+div.wh-portal-slide-newwork .wh-portal-i-item-list .office {
+  position: absolute;
+  top: 0;
+  left: 64%;
+  height: 40px;
+  line-height: 40px;
+  display: block;
+}
+/* portal统计 */
+.tongji .counts {
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  margin-top: 15px;
+  color: #000;
+}
+.tongji .counts span {
+  margin: 0 5px;
+}
+.tongji .counts span em {
+  margin-left: 3px;
+}
+.tongji .tongji-Chart {
+  width: 95%;
+  margin: 30px auto;
+}
