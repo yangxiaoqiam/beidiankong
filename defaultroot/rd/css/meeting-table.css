@@ -1,0 +1,22 @@
+  body,html,table, tr,th,td, span, p,div {padding: 0; margin: 0;}
+  input,textarea{outline:none;}
+   .box{margin:20px auto;font-family: 微软雅黑;width: 1000px;}
+    .table1>tbody>tr>td{font-size: 16px;padding: 5px;letter-spacing: 1px; vertical-align: top;}
+   .box .td-title{font-weight: bold; width:90px; }
+   .title-a{font-size: 20px; text-align: center;font-weight: bold;}
+    .box .title-a textarea{height: auto !important;
+        width: 100% !important;
+        text-align: center !important;  
+        font-size: 20px !important;
+       text-align: center !important;
+       font-weight: bold !important;
+       padding-bottom: 20px !important;
+   }
+   .box .inputText{border:0 none !important;font-size: 16px !important;}
+   .box .inputTextarea{border:0 none !important; font-size: 16px !important;}
+   .box .subtablediv table{border: 0 none !important;}
+   .box .subtablediv table .firstRow{background: #f8f8f8}
+   .box .subtablediv table td{border: 1px solid #dcdcdc !important; padding: 8px;font-size: 16px !important}
+    .box .subtablediv table td textarea{color: #333 !important;height: auto !important}
+    .box .subtablediv table  div{text-align: left;}
+    .tr-none div{display:none !important}

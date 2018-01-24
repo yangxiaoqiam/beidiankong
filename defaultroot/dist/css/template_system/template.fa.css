@@ -867,9 +867,21 @@
 .fa-new-bulid:before {
   content: "\f119";
 }
-.fa-select-small:before {
-  content: "\f11a";
-}
-.fa-pro:before {
+.fa-meeting-delay:before {
   content: "\f135";
+}
+.fa-meeting-delay-fine:before {
+  content: "\f136";
+}
+.fa-new-motion:before {
+  content: "\f137";
+}
+.fa-info-reveal:before {
+  content: "\f138";
+}
+.fa-info-reveal-fine:before {
+  content: "\f139";
+}
+.fa-receipt:before {
+  content: "\f129";
 }

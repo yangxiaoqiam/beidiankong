@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="wh-gray-bg theme-blue theme-width-blue size-big16">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link rel="stylesheet" href="template/css/template_system/template.reset.min.css" />
+    <link rel="stylesheet" href="template/css/template_system/template.fa.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.portal.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.style.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/template.portal.size.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.before.min.css" />
+    <link rel="stylesheet" href="template/css/template_default/themes/2016/template.theme.after.min.css" />
+    <link rel="stylesheet" href="templates/template_default/themes/2015/color_default/template.color.default.css">
+     <link rel="stylesheet" href="themes/common/common.css">
+    <script type="text/javascript" src="scripts/plugins/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="scripts/plugins/superslide/jquery.SuperSlide.2.1.1.js"></script>
+    <script type="text/javascript" src="scripts/plugins/flexslide/jquery.flexslider.js"></script>
+    <script type="text/javascript" src="scripts/plugins/foucs/jquery.foucs.js"></script>
+    <script type="text/javascript" src="scripts/plugins/highcharts/jquery.highcharts.js"></script>
+    <script type="text/javascript" src="scripts/plugins/highcharts/jquery.highcharts-more.js"></script>
+    <link rel="stylesheet" type="text/css" href="rd/css/pro.css">
+</head>
+
+<body class="wh-gray-bg">
+    
+<div class="wh-portal-i-title clearfix">
+    <ul class="wh-portal-i-title-left wh-portal-title-slide-work clearfix">
+        <li class="wh-portal-title-li on"><a href="">新工作汇报</a></li>
+        <li class="wh-portal-title-li"><a href="">新下属汇报</a></li>
+    </ul>
+</div>
+<div class="wh-portal-i-content">
+    <div class="wh-portal-info-content wh-portal-info-conlinebig">
+        <div class="wh-portal-slide-work">
+            <ul class="wh-new-work  clearfix">
+                <li style="display: list-item;">
+                      <div id="container1" style="min-width:400px;height:400px"></div>
+                </li>
+
+                <li class="wh-portal-hidden" style="display: none;">
+                <div id="container2" style="min-width:400px;height:400px"></div>
+                      
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<script>
+$(function() {
+    var $tab_li_work = $('.wh-portal-title-slide-work li');
+    $tab_li_work.hover(function() {
+        $(this).addClass('on').siblings().removeClass('on');
+        var index = $tab_li_work.index(this);
+        var indexn=index+1;
+        $('.wh-portal-slide-work > ul > li').eq(index).show().siblings().hide();
+        var chartn = $('#container'+indexn).highcharts();
+           console.log($('#container'+indexn));
+            chartn.reflow();
+
+    });
+
+
+
+$('#container1').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false
+        },
+        title: {
+            text: '2014 某网站各浏览器浏览量占比'
+        },
+        tooltip: {
+            headerFormat: '{series.name}<br>',
+            pointFormat: '{point.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: '浏览器访问量占比',
+            data: [
+                ['Firefox',   45.0],
+                ['IE',       26.8],
+                {
+                    name: 'Chrome',
+                    y: 12.8,
+                    sliced: true,
+                    selected: true
+                },
+                ['Safari',    8.5],
+                ['Opera',     6.2],
+                ['其他',   0.7]
+            ]
+        }]
+    });
+
+
+$('#container2').highcharts({
+        chart: {
+            plotBackgroundColor: null,
+            plotBorderWidth: null,
+            plotShadow: false
+        },
+        title: {
+            text: '2014 某网站各浏览器浏览量占比'
+        },
+        tooltip: {
+            headerFormat: '{series.name}<br>',
+            pointFormat: '{point.name}: <b>{point.percentage:.1f}%</b>'
+        },
+        plotOptions: {
+            pie: {
+                allowPointSelect: true,
+                cursor: 'pointer',
+                dataLabels: {
+                    enabled: true,
+                    format: '<b>{point.name}</b>: {point.percentage:.1f} %',
+                    style: {
+                        color: (Highcharts.theme && Highcharts.theme.contrastTextColor) || 'black'
+                    }
+                }
+            }
+        },
+        series: [{
+            type: 'pie',
+            name: '浏览器访问量占比',
+            data: [
+                ['Firefox',   45.0],
+                ['IE',       26.8],
+                {
+                    name: 'Chrome',
+                    y: 12.8,
+                    sliced: true,
+                    selected: true
+                },
+                ['其他',   0.7]
+            ]
+        }]
+    });
+
+
+
+})
+
+</script>
+
+</body>
+
+</html>

@@ -6,10 +6,38 @@
   <link rel="stylesheet" href="dist/css/template_system/template.reset.css" />
   <link rel="stylesheet" href="dist/css/template_default/template.logins_12oa.css" />
   <link rel="stylesheet" href="dist/css/template_system/template.fa.css" />
+
+  <!-- login -->
+  <link rel="stylesheet" type="text/css" href="rd/css/pro.css" />
 </head>
 
 <body>
   <div class="wh-lg-main">
+    <!-- login setting -->
+    <div class="pro-title-setting">
+        <div class="pro-login-container clearfix">
+            <h1>
+                <img src="rd/img/pro-logo.png" />
+            </h1>
+
+            <div class="pro-seeting-div">
+                <ul class="clearfix">
+                    <li class="pro-appdown">
+                        <a href="##"><i class="fa fa-qr-code"></i><span>App下载</span></a>
+                        <div class="weixin-show">
+                          <img src="rd/img/weixin.png" />
+                          <span>APP下载</span>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="##"><i class="fa fa-cog2"></i><span>控件安装</span></a>
+                    </li> 
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
     <div class="wh-lg-header">
       <h1><img id="loginPic" src="images/ver113/login/logo.png" data-pich="80"/></h1>
       
@@ -19,6 +47,7 @@
       <form>
         <div id="box1" class="lg-nomal-form" style="display: block;">
           <div class="lg-form-con">
+            <div class="login-title">登录系统</div>
           	<div class="check-tips formdiv-container error">
           		<p>
                 <span>
@@ -49,7 +78,7 @@
               <a id="found-password" href="##">找回密码？</a>
             </div>
             <div class="denglu">
-              <input type="submit" name="" value="进入系统" class="lg-submit-btn" />
+              <input type="submit" name="" value="登录" class="lg-submit-btn" />
             </div>
           </div>
         </div>
@@ -136,15 +165,32 @@
     <p>万户网络 © 1998-2016 All Rights Reserved.</p>
   </div>
  <div id="fullpage">
-    <div class="section active" id="section0" style="background-image:url('images/ver113/login/bg_login_sd.jpg');  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='images/ver113/login/bg_login_sd.jpg', sizingMethod='scale');"> </div>
-    <div class="section" id="section1" style="background-image:url('images/ver113/login/slider3.jpg');  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='images/ver113/login/slider3.jpg', sizingMethod='scale');"></div>
-    <div class="section" id="section2" style="background-image:url('images/ver113/login/bg_login_sd.jpg');  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='images/ver113/login/bg_login_sd.jpg', sizingMethod='scale');"></div>
+    <div class="section active" id="section0" style="background-image:url('rd/img/bg.jpg');  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='images/ver113/login/bg_login_sd.jpg', sizingMethod='scale');"> </div>
+<!--     <div class="section" id="section1" style="background-image:url('images/ver113/login/slider3.jpg');  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='images/ver113/login/slider3.jpg', sizingMethod='scale');"></div>
+<div class="section" id="section2" style="background-image:url('images/ver113/login/bg_login_sd.jpg');  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='images/ver113/login/bg_login_sd.jpg', sizingMethod='scale');"></div> -->
   </div>
   <script type="text/javascript" src="scripts/plugins/jquery/jquery.min.js"></script>
   <script type="text/javascript" src="scripts/plugins/jquery/jquery.easing.min.js"></script>
   <script type="text/javascript" src="scripts/plugins/fullpage/jquery.fullPage.min.js"></script>
   <script type="text/javascript" src="scripts/plugins/flexslide/jquery.flexslider.js"></script>
-  <script type="text/javascript">
+
+
+  <script type="text/javascript"> 
+    $(".pro-appdown").click(function(event){
+        //取消冒泡事件
+        event.stopPropagation();//这句是必须
+        $(".weixin-show").slideToggle(100);
+    });
+
+     //点击空白或者其他区域时divTop隐藏
+    $(document).click(function(){
+        $(".weixin-show").fadeOut(100);
+    });
+ 
+    $(".weixin-show").click(function(){
+        $(this.fadeOut(100));
+    })
+
    // 记住密码
         function rember(aaaa) {
           if($(aaaa).hasClass("rm-password2")){
