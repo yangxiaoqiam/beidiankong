@@ -45,17 +45,11 @@ textarea {
   margin: 15px 0;
 }
 .wh-detail .container {
-  min-width: 970px;
-  width: 970px;
+  width: 70%;
   position: relative;
   border: 1px solid transparent;
   border-color: #ddd;
   background-color: #fff;
-}
-@media (min-width: 1200px) {
-  .wh-detail .container {
-    width: 970px;
-  }
 }
 .wh-detail .container .view-btn-group {
   margin-top: 10px;
@@ -110,13 +104,17 @@ textarea {
   border-style: solid;
   box-sizing: border-box;
 }
-.wh-dtl-top .container {
+.wh-dtl-top {
   background-color: #fbfbfb;
+  position: relative;
+  z-index: 9999999999;
+  border-bottom: 1px solid #e3e3e3;
+  height: 36px;
 }
 .wh-dtl-bread {
   float: left;
   height: 38px;
-  padding: 10px 0;
+  padding: 10px 0 10px 15px;
   overflow: hidden;
 }
 .wh-dtl-bread a {
@@ -187,52 +185,6 @@ textarea {
 .wh-dtl-meta .meta-r {
   float: right;
 }
-.wh-dtl-meta .meta-more {
-  display: inline-block;
-}
-.wh-dtl-meta .meta-more > a {
-  display: inline-block;
-  position: relative;
-  border-radius: 10px;
-  border: 1px solid transparent;
-  padding: 1px 10px;
-}
-.wh-dtl-meta .meta-more > a .fa {
-  margin-right: 3px;
-}
-.wh-dtl-meta .meta-more > a.meta-m-vote i {
-  position: absolute;
-  top: 3px;
-  left: 10px;
-  -webkit-transform: rotate(0deg);
-  -ms-transform: rotate(0deg);
-  -o-transform: rotate(0deg);
-  transform: rotate(0deg);
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.wh-dtl-meta .meta-more > a.meta-m-vote em {
-  margin-left: 16px;
-}
-.wh-dtl-meta .meta-more > a.meta-m-vote.active-status i {
-  top: -8px;
-  left: -4px;
-  font-size: 38px;
-  top: 3px \9;
-  left: 10px \9;
-  font-size: inherit \9;
-  -webkit-transform: rotate(-20deg);
-  -ms-transform: rotate(-20deg);
-  -o-transform: rotate(-20deg);
-  transform: rotate(-20deg);
-  -webkit-transition: all 0.3s;
-  -o-transition: all 0.3s;
-  transition: all 0.3s;
-}
-.wh-dtl-meta .meta-more > a.meta-m-vote.active i {
-  color: #A9A9A9;
-}
 .meta-tags a.meta-cogs {
   font-weight: bold;
 }
@@ -275,6 +227,7 @@ textarea {
 .wh-dtl-nav .nav {
   margin-top: 9px;
   position: relative;
+  display: inline-block;
 }
 .wh-dtl-nav .nav .open > a,
 .wh-dtl-nav .nav .open > a:hover,
@@ -284,15 +237,16 @@ textarea {
 .wh-dtl-nav .nav > li {
   float: left;
   border-left: 1px solid #c7c7c7;
-  width: 85px;
+  width: 110px;
   position: static;
   left: auto;
 }
-.wh-dtl-nav .nav > li:first-child {
-  border: 0 none;
+.wh-dtl-nav .nav > li.attachment .badge {
+  left: -10px;
 }
 .wh-dtl-nav .nav > li > a {
-  padding: 0 15px;
+  padding: 0;
+  margin: 0 15px;
 }
 .wh-dtl-nav .nav > li > a:after {
   display: inline-block;
@@ -348,8 +302,61 @@ textarea {
 }
 .wh-dtl-nav .nav > li.open .dropdown-menu {
   top: 26px;
+  left: 0;
+  right: auto;
+}
+.wh-dtl-nav .nav > li.attachment.open .dropdown-menu {
+  top: 26px;
   left: auto;
-  right: -16px;
+  right: 0;
+}
+.wh-dtl-nav .meta-more {
+  display: inline-block;
+  float: left;
+  margin: 6px 30px 0 0;
+}
+.wh-dtl-nav .meta-more > a {
+  display: inline-block;
+  position: relative;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  padding: 1px 10px;
+}
+.wh-dtl-nav .meta-more > a .fa {
+  margin-right: 3px;
+}
+.wh-dtl-nav .meta-more > a.meta-m-vote i {
+  position: absolute;
+  top: 3px;
+  left: 10px;
+  -webkit-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  transform: rotate(0deg);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.wh-dtl-nav .meta-more > a.meta-m-vote em {
+  margin-left: 16px;
+}
+.wh-dtl-nav .meta-more > a.meta-m-vote.active-status i {
+  top: -8px;
+  left: -4px;
+  font-size: 38px;
+  top: 3px \9;
+  left: 10px \9;
+  font-size: inherit \9;
+  -webkit-transform: rotate(-20deg);
+  -ms-transform: rotate(-20deg);
+  -o-transform: rotate(-20deg);
+  transform: rotate(-20deg);
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.wh-dtl-nav .meta-more > a.meta-m-vote.active i {
+  color: #A9A9A9;
 }
 .modal-details .modal-footer {
   text-align: left;
@@ -535,6 +542,29 @@ textarea {
   right: 10px;
   cursor: pointer;
 }
+.att-com .fujian-download {
+  text-align: left;
+}
+.att-com .fujian-download em {
+  border-right: 1px solid #c7c7c7;
+  padding-right: 5px;
+  margin-right: 5px;
+}
+.att-com ul {
+  height: 214px;
+}
+.att-com ul li {
+  float: left;
+  width: 100%;
+  margin-right: 2%;
+  list-style: none;
+  position: relative;
+}
+.att-com ul li .fa-download {
+  position: absolute;
+  top: 12px;
+  right: 3px;
+}
 .dropdown-menu {
   padding: 10px;
   border: 1px solid rgba(0, 0, 0, 0.05);
@@ -544,7 +574,8 @@ textarea {
 .dropdown-menu .relate-con,
 .dropdown-menu .attr-con,
 .dropdown-menu .att-com,
-.dropdown-menu .version-con {
+.dropdown-menu .version-con,
+.dropdown-menu .atta-con {
   width: 310px;
   height: 214px;
   overflow-y: auto;
@@ -552,20 +583,26 @@ textarea {
 .dropdown-menu .relate-con dl,
 .dropdown-menu .attr-con dl,
 .dropdown-menu .att-com dl,
-.dropdown-menu .version-con dl {
+.dropdown-menu .version-con dl,
+.dropdown-menu .atta-con dl {
   margin-bottom: 0;
 }
 .dropdown-menu .relate-con dl dt,
 .dropdown-menu .attr-con dl dt,
 .dropdown-menu .att-com dl dt,
-.dropdown-menu .version-con dl dt {
+.dropdown-menu .version-con dl dt,
+.dropdown-menu .atta-con dl dt {
   font-weight: normal;
 }
 .dropdown-menu .relate-con dl dd p,
 .dropdown-menu .attr-con dl dd p,
 .dropdown-menu .att-com dl dd p,
-.dropdown-menu .version-con dl dd p {
+.dropdown-menu .version-con dl dd p,
+.dropdown-menu .atta-con dl dd p {
   line-height: 20px;
+}
+.dropdown-menu .att-com {
+  height: 326px;
 }
 .dropdown-menu.add-meta-tips {
   width: 320px;
@@ -1195,22 +1232,4 @@ textarea {
   float: left;
   width: 79% !important;
   margin-left: 7px;
-}
-.detail-fujian .fujian-download {
-  text-align: left;
-}
-.detail-fujian .fujian-download em {
-  border-right: 1px solid #c7c7c7;
-  padding-right: 5px;
-  margin-right: 5px;
-}
-.detail-fujian .att-com ul {
-  height: auto;
-  max-height: 190px;
-}
-.detail-fujian .att-com ul li {
-  float: left;
-  width: 48%;
-  margin-right: 2%;
-  list-style: none;
 }

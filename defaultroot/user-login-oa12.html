@@ -47,7 +47,7 @@
       <form>
         <div id="box1" class="lg-nomal-form" style="display: block;">
           <div class="lg-form-con">
-            <div class="login-title">登录系统</div>
+            <div class="login-title"></div>
           	<div class="check-tips formdiv-container error">
           		<p>
                 <span>
@@ -165,7 +165,7 @@
     <p>万户网络 © 1998-2016 All Rights Reserved.</p>
   </div>
  <div id="fullpage">
-    <div class="section active" id="section0" style="background-image:url('rd/img/bg.jpg');  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='images/ver113/login/bg_login_sd.jpg', sizingMethod='scale');"> </div>
+    <div class="section active" id="section0" style="background-image:url('rd/img/bg1.jpg');  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='images/ver113/login/bg_login_sd.jpg', sizingMethod='scale');"> </div>
 <!--     <div class="section" id="section1" style="background-image:url('images/ver113/login/slider3.jpg');  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='images/ver113/login/slider3.jpg', sizingMethod='scale');"></div>
 <div class="section" id="section2" style="background-image:url('images/ver113/login/bg_login_sd.jpg');  filter: progid:DXImageTransform.Microsoft.AlphaImageLoader( src='images/ver113/login/bg_login_sd.jpg', sizingMethod='scale');"></div> -->
   </div>
@@ -314,6 +314,15 @@ function placeholderSupport() {
      setInterval(function(){
         $.fn.fullpage.moveSectionDown();
     }, 3000);
+
+     if(document.body.clientHeight<700){
+       $(".wh-lg-main").addClass("smallscreen");
+       $("#fullpage").addClass("smallscreen-bg")
+     }
+     else{
+      $(".wh-lg-main").removeClass("smallscreen")
+       $("#fullpage").removeClass("smallscreen-bg")
+     }
   </script>
 </body>
 </html>

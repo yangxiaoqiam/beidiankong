@@ -738,18 +738,37 @@
 }
 .no-star .db-list-star{display:none;}
 .clearVideo a{margin-top: 106px;}
+
 //新页签
-.panel .panel-heading .panel-hd-btns{margin-top:7px;}
-.panel .panel-heading .panel-hd-tabs{margin-top:7px;}
-.panel .panel-heading .panel-hd-tip{ float:left;   margin-top:7px;margin-left:10px;position:relative;}
-.panel .panel-heading .panel-hd-search{margin-top: 7px;}
-.panel .panel-heading{ padding:0 15px 0 0;}
-.panel .panel-heading .panel-hd-tip.open .hd-tip-dropdown{top:38px;width:100%;}
+
+ .panel.panel-whlist .panel-heading {
+    padding: 0 15px 0 0;
+     height:auto !important; 
+    .panel-hd-btns {
+        margin-top: 7px;
+    }
+    .panel-hd-tabs {
+        margin-top: 7px;
+    }
+    .panel-hd-tip {
+        float: left;
+        margin-top: 7px;
+        margin-left: 10px;
+        position: relative;
+    }
+    .panel-hd-search {
+        margin-top: 7px;
+    }
+    .panel-hd-tip.open .hd-tip-dropdown {
+        top: 38px;
+        width: 100%;
+    }
+}
 
 .txl_tab{float:left;  display:inline-block; height:43px;  overflow:hidden; position:relative;border-top-left-radius:4px;   }
 .txl_tab .hd{   margin-left:-10px; display:none;overflow:hidden;  height:43px;   }
-.txl_tab .hd .prev,.txl_tab .hd .next{ display:block;  width:35px; height:43px;line-height:43px; float:right;  overflow:hidden;
-             cursor:pointer; border-right: 1px solid #ddd;text-align:center;}
+.txl_tab .hd .prev,.txl_tab .hd .next{ display:block;  width:35px; height:42px;line-height:42px; float:right;  overflow:hidden;
+             cursor:pointer; border-right: 1px solid #ddd;text-align:center;/* border-bottom: 1px solid #ddd; */}
 .txl_tab .hd .next{ background-position:0 -50px;  }
  .txl_tab .hd .fa{font-size:18px;line-height:auto; display:inline-block;margin-top: 12px;}
 .txl_tab .hd .prevStop{ background-position:-60px 0; }
@@ -759,7 +778,7 @@
 .txl_tab .hd ul li.on{ background-position:0 0; }
 .txl_tab .bd{display:inline-block;   }
 .txl_tab .bd ul{ overflow:hidden; zoom:1; }
-.txl_tab .bd ul li{height:43px;line-height:43px; margin:0; border-right: 1px solid #ddd;
+.txl_tab .bd ul li{height:43px;line-height:43px; margin:0; border-right: 1px solid #ddd;/* border-bottom: 1px solid #ddd; */
             float:left; _display:inline; overflow:hidden; text-align:center; margin-bottom: 1px; }
 .txl_tab .bd ul li.active { background:red;   }
 .txl_tab .bd ul li span{margin:0 25px; display:inline-block; height:43px;line-height:43px;color:#333;}

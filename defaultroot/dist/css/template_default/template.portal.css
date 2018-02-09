@@ -4041,16 +4041,16 @@ h5 {
   background-color: #f18d35;
 }
 .wh-pending-g-finish {
-  background-color: #00BB00;
+  background-color: #80dc6e;
 }
 .wh-pending-g-finish {
   background-color: #00BB00;
 }
 .wh-pending-s-no-active {
-  background-color: #f18d35;
+  background-color: #fdc95f;
 }
 .wh-pending-s-active {
-  background-color: #0000C6;
+  background-color: #7fc3fe;
 }
 .wh-protal-tab-rush p {
   display: inline;
@@ -5185,7 +5185,7 @@ h5 {
   text-indent: 20px;
 }
 .wh-pending-g-wating {
-  background-color: #FF0000;
+  background-color: #f76f73;
 }
 .wh-pending-g-cancel {
   background-color: gray;
