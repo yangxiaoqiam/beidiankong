@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="zh-cn" class="theme-red theme-red-pure size-big">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <base url="defaultroot">
+  <title>信息详情页</title>
+  <link rel="stylesheet" href="dist/css/template_system/template.fa.css" />
+  <link rel="stylesheet" href="dist/css/template_system/template.reset.css" />
+  <link rel="stylesheet" href="dist/css/template.bootstrap.css" />
+  <link rel="stylesheet" href="dist/css/template_default/template.detail.css" />
+  <link rel="stylesheet" href="dist/css/template_default/template.media.css" />
+  <link rel="stylesheet" href="dist/css/template_default/themes/2016/template.theme.media.css" />
+  <link rel="stylesheet" href="dist/css/template_default/themes/2016/template.theme.detail.css" />
+  <link rel="stylesheet" href="dist/css/template_default/template.detail.size.css" />
+  <link rel="stylesheet" href="template/css/template_system/template.new.min.css" />
+</head>
+
+<body>
+  <div class="wh-wrapper">
+    <div class="wh-view wh-detail wh-d-info">
+      <div class="wh-dtl-top clearfix">
+        <div class="wh-dtl-bread">
+          <a href="javascript:void(0)"><i class="fa fa-circle fa-color"></i></a>
+          <a href="javascript:void(0)" class="dtl-fst"><span>信息管理&#8729;新闻中心&#8729;最新新闻</span></a>
+        </div>
+        <div class="wh-dtl-nav pull-right">
+          <div class="meta-more meta-r">
+            <a href="javascript:void(0)" class="meta-m-view"><i class="fa fa-eye"></i><span>999+</span></a>
+            <a href="javascript:void(0)" id="add-comments" class="meta-m-commit" tabindex="1"><i class="fa fa-pencil-square-o"></i><em>999+</em><span>评论</span></a>
+            <a id="meta-m-vote" href="javascript:void(0)" class="meta-m-vote"><i class="fa fa-thumbs-o-up"></i><em>10</em><span>赞</span></a>
+          </div>
+          <ul class="nav" role="tablist">
+            <li role="presentation" class="dropdown">
+              <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">版本<span class="arrow"><em></em></span></a>
+              <div class="version dropdown-menu">
+                <div class="version-con">
+                  <ol>
+                    <li class="current">
+                      <a href="javascript:void(0);" class="clearfix">
+                        <em>12.0</em>
+                        <p><span>修改人：李小琳</span><span>时间：2016-09-01 14：20</span></p>
+                      </a>
+                      <i class="arrowtip">&#8593;</i>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" class="clearfix">
+                        <em>11.0</em>
+                        <p><span>修改人：李小琳</span><span>时间：2016-09-01 14：20</span></p>
+                        <i class="fa fa-minus-circle"></i>
+                      </a>
+                      <i class="arrowtip">&#8593;</i>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" class="clearfix">
+                        <em>10.0</em>
+                        <p><span>修改人：李小琳</span><span>时间：2016-09-01 14：20</span></p>
+                        <i class="fa fa-minus-circle"></i>
+                      </a>
+                      <i class="arrowtip">&#8593;</i>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" class="clearfix">
+                        <em>9.0</em>
+                        <p><span>修改人：李小琳</span><span>时间：2016-09-01 14：20</span></p>
+                        <i class="fa fa-minus-circle"></i>
+                      </a>
+                      <i class="arrowtip">&#8593;</i>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" class="clearfix">
+                        <em>8.0</em>
+                        <p><span>修改人：李小琳</span><span>时间：2016-09-01 14：20</span></p>
+                        <i class="fa fa-minus-circle"></i>
+                      </a>
+                      <i class="arrowtip">&#8593;</i>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" class="clearfix">
+                        <em>7.0</em>
+                        <p><span>修改人：李小琳</span><span>时间：2016-09-01 14：20</span></p>
+                        <i class="fa fa-minus-circle"></i>
+                      </a>
+                      <i class="arrowtip">&#8593;</i>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" class="clearfix">
+                        <em>6.0</em>
+                        <p><span>修改人：李小琳</span><span>时间：2016-09-01 14：20</span></p>
+                        <i class="fa fa-minus-circle"></i>
+                      </a>
+                      <i class="arrowtip">&#8593;</i>
+                    </li>
+                    <li>
+                      <a href="javascript:void(0);" class="clearfix">
+                        <em>5.0</em>
+                        <p><span>修改人：李小琳</span><span>时间：2016-09-01 14：20</span></p>
+                        <i class="fa fa-minus-circle"></i>
+                      </a>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </li>
+            <li role="presentation" class="dropdown">
+              <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">属性<span class="badge">3</span>
+                <span class="arrow"><em></em></span></a>
+              <div class="attr dropdown-menu">
+                <div class="attr-con">
+                  <dl class="dl-horizontal">
+                    <dt>作者： </dt>
+                    <dd>莫小文莫小文莫小文莫小文莫小文莫小文莫小文莫小文莫小文莫小文莫小文莫小文莫小文莫小文莫小文莫小文莫小文莫小文莫小文莫小文莫小文莫小文</dd>
+                  </dl>
+                  <dl class="dl-horizontal">
+                    <dt>文章类型：</dt>
+                    <dd>转载</dd>
+                  </dl>
+                  <dl>
+                    <dt>摘要：</dt>
+                    <dd>
+                      <p>
+                        天雷霆击败湖人，维斯布鲁克贡献本赛季个人第18个三双，他在第2节还有不到1分钟结束时达到三双数据的，在维斯之前，上一个在比赛上天雷霆击败湖人，维斯布鲁克贡献本赛季个人第18个三双，他在第2节还有不到1分钟结束时达到三双数据的，在维斯之前，上一个在比赛上天雷霆击败湖人，维斯布鲁克贡献本赛季个人第18个三双，他在第2节还有不到1分钟结束时达到三双数据的，在维斯之前，上一个在比赛上天雷霆击败湖人，维斯布鲁克贡献本赛季个人第18个三双，他在第2节还有不到1分钟结束时达到三双数据的，在维斯之前，上一个在比赛上天雷霆击败湖人，维斯布鲁克贡献本赛季个人第18个三双，他在第2节还有不到1分钟结束时达到三双数据的，在维斯之前，上一个在比赛上天雷霆击败湖人，维斯布鲁克贡献本赛季个人第18个三双，他在第2节还有不到1分钟结束时达到三双数据的，在维斯之前，上一个在比赛上
+                      </p>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li role="presentation" class="dropdown">
+              <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">关联<span class="badge">3</span><span class="arrow"><em></em></span></a>
+              <div class="relate dropdown-menu">
+                <div class="relate-con">
+                  <dl>
+                    <dt>关联流程</dt>
+                    <dd>
+                      <ul>
+                        <li><a href=""><i class="fa fa-circle"></i><p>王晓强发起的上海仓库采购进货流程 等待您的办理！王晓强发起的上海仓库采购进货流程 等待您的办理！王晓强发起的上海仓库采购进货流程 等待您的办理！王晓强发起的上海仓库采购进货流程 等待您的办理！王晓强发起的上海仓库采购进货流程 等待您的办理！王晓强发起的上海仓库采购进货流程 等待您的办理！</p></a></li>
+                      </ul>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>关联合同</dt>
+                    <dd>
+                      <ul>
+                        <li><a href=""><i class="fa fa-circle"></i><p>办公耗材采购</p></a></li>
+                      </ul>
+                    </dd>
+                  </dl>
+                  <dl>
+                    <dt>关联信息</dt>
+                    <dd>
+                      <ul>
+                        <li><a href=""><i class="fa fa-circle"></i><p>三季度税务部门税收收入83842亿 同增7.6%</p></a></li>
+                        <li><a href=""><i class="fa fa-circle"></i><p>关于公司使用新版OA的通知</p></a></li>
+                        <li><a href=""><i class="fa fa-circle"></i><p>万户OA微信企业号升级 为办公加速</p></a></li>
+                      </ul>
+                    </dd>
+                  </dl>
+                </div>
+              </div>
+            </li>
+            <li role="presentation" class="attachment dropdown">
+              <a href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">附件链接<span class="badge">3</span><span class="arrow"><em></em></span></a>
+              <div class="attachmentlist dropdown-menu">
+                <div class="att-com">
+                  <p class="fujian-download"><em>共<span>2</span>个附件</em><a href="javascript:void(0)">批量下载</a></p>
+                  <ul class="clearfix">
+                    <li>
+                      <i class="icon-att icon-att-other"></i>
+                      <div class="att-modal" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="11.3.0.18_SP_20160411(asdfasdfsadfsadfasdfasdfsdf).rar">
+                        <a href="javascript:void(0);" title="11.3.0.18_SP_20160411(asdfasdfsadfsadfasdfasdfsdf).rar">11.3.0.18_SP_20160411(asdfasdfsadfsadfasdfasdfsdf).rar</a>
+                        <span>18.9MB</span> 
+                      </div>
+                      <a href="#"><i class="fa fa-color fa-download"></i></a>
+                    </li>
+                    <li><i class="icon-att icon-att-doc"></i>
+                      <div class="att-modal" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="万户网络“香米粑”管理制度.doc">
+                        <a href="javascript:void(0);">万户网络“香米粑”管理制度.doc </a>
+                        <span>18.9MB</span> 
+                      </div>
+                      <a href="#"><i class="fa fa-color fa-download"></i></a>
+                    </li>
+                    <li><i class="icon-att icon-att-xls"></i>
+                      <div class="att-modal" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="万户网络“香米粑”管理制度.doc ">
+                        <a href="javascript:void(0);">万户网络“香米粑”管理制度.xls </a>
+                        <span>18.9MB</span> 
+                      </div>
+                      <a href="#"><i class="fa fa-color fa-download"></i></a>
+                    </li>
+                    <li><i class="icon-att icon-att-mpg"></i>
+                      <div class="att-modal" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="万户网络“香米粑”管理制度.mpg">
+                        <a href="javascript:void(0);">万户网络“香米粑”管理制度.mpg </a>
+                        <span>18.9MB</span> 
+                      </div>
+                      <a href="#"><i class="fa fa-color fa-download"></i></a>
+                    </li>
+                    <li><i class="icon-att icon-att-pdf"></i>
+                      <div class="att-modal">
+                        <a href="javascript:void(0);">11.3.0.18_SP_20160411(项目化手动目化手动目化手动目化手动目化手动目化手动安装).pdf</a>
+                        <span>18.9MB</span> 
+                      </div>
+                      <a href="#"><i class="fa fa-color fa-download"></i></a>
+                    </li>
+                    <li><i class="icon-att icon-att-pic"></i>
+                      <div class="att-modal">
+                        <a href="javascript:void(0);">11.3.0.18_SP_20160411(项目化手动安装).pic</a>
+                        <span>18.9MB</span> 
+                      </div>
+                      <a href="#"><i class="fa fa-color fa-download"></i></a>
+                    </li>
+                    <li><i class="icon-att icon-att-ppt"></i>
+                      <div class="att-modal">
+                        <a href="javascript:void(0);">11.3.0.18_SP_20160411(项目化手动安装).ppt</a>
+                        <span>18.9MB</span> 
+                      </div>
+                      <a href="#"><i class="fa fa-color fa-download"></i></a>
+                    </li>
+                    <li><i class="icon-att icon-att-psd"></i>
+                      <div class="att-modal">
+                        <a href="javascript:void(0);">11.3.0.18_SP_20160411(项目化手动安装).psd</a>
+                        <span>18.9MB</span> 
+                      </div>
+                      <a href="#"><i class="fa fa-color fa-download"></i></a>
+                    </li>
+                    <li><i class="icon-att icon-att-radio"></i>
+                      <div class="att-modal">
+                        <a href="javascript:void(0);">11.3.0.18_SP_20160411(项目化手动安装).radio</a>
+                        <span>18.9MB</span> 
+                      </div>
+                      <a href="#"><i class="fa fa-color fa-download"></i></a>
+                    </li>
+                    <li><i class="icon-att icon-att-txt"></i>
+                      <div class="att-modal">
+                        <a href="javascript:void(0);">11.3.0.18_SP_20160411(项目化手动安装).txt</a>
+                        <span>18.9MB</span> 
+                      </div>
+                      <a href="#"><i class="fa fa-color fa-download"></i></a>
+                    </li>
+                    <li><i class="icon-att icon-att-zip"></i>
+                      <div class="att-modal">
+                        <a href="javascript:void(0);">11.3.0.18_SP_20160411(项目化手动安装).zip</a>
+                        <span>18.9MB</span>
+                      </div>
+                      <a href="#"><i class="fa fa-color fa-download"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="wh-dtl-con">
+        <div class="container">
+          <!-- <div class="wh-dtl-tit">
+            <h1>中部区网站建设签单快报，四月的天气</h1>
+            <h2>中部区网站建设签单快报，四月的天气</h2>
+          </div>
+          <div class="wh-dtl-meta">
+            <div class="meta-l">
+              <span class="meta-date">2016-04-13 10:49:51</span>
+              <strong class="meta-author">发布人：</strong>
+              <span class="meta-aname">行政部·吴新民</span>
+            </div> 
+          </div>
+          <hr />
+          <div class="meta-tags clearfix">
+            <a href="javascript:void(0)" id="add-tags" class="meta-cogs" tabindex="1">+</a>
+            <a href="javascript:void(0)" class="meta-tag">捷报</a>
+            <a href="javascript:void(0)" class="meta-tag"><span>asdfasfdasdfasda</span></a>
+            <a href="javascript:void(0)" class="meta-tag"><span>前端攻城狮</span></a>
+            <a href="javascript:void(0)" class="meta-tag"><span>前端</span></a>
+            <a href="javascript:void(0)" class="meta-tag"><span>研发一部</span></a>
+            <a href="javascript:void(0)" class="meta-tag"><span>产品部</span></a>
+            <a href="javascript:void(0)" class="meta-tag"><span>质量部</span></a>
+            <a href="javascript:void(0)" class="meta-tag"><span>asdfasfdasdfasda</span></a>
+            <a href="javascript:void(0)" class="meta-close"><span>篮球</span><i class="fa fa-times-circle-o"></i></a>
+          </div>
+          <hr /> -->
+          <!--信息附件 -->
+          <!-- <div class="detail-fujian">
+            <p class="fujian-download"><em>共<span>2</span>个附件</em><a href="javascript:void(0)">批量下载</a></p>
+            <div class="att-com">
+              <ul class="clearfix">
+                <li><i class="icon-att icon-att-other"></i>
+                  <div class="att-modal" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="11.3.0.18_SP_20160411(asdfasdfsadfsadfasdfasdfsdf).rar">
+                    <a href="javascript:void(0);" title="11.3.0.18_SP_20160411(asdfasdfsadfsadfasdfasdfsdf).rar">11.3.0.18_SP_20160411(asdfasdfsadfsadfasdfasdfsdf).rar</a>
+                    <span>18.9MB</span>
+                    <div class="att-modal-icon">
+                      <i class="fa fa-eye" data-toggle="tooltip" title="" data-original-title="预览"></i>
+                      <i class="fa fa-download" data-toggle="tooltip" title="" data-original-title="下载"></i>
+                      <i class="fa fa-times" data-toggle="tooltip" title="" data-original-title="删除"></i>
+                    </div>
+                    <div class="att-modal-bg">
+                    </div>
+                  </div>
+                </li>
+                <li><i class="icon-att icon-att-doc"></i>
+                  <div class="att-modal" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="万户网络“香米粑”管理制度.doc">
+                    <a href="javascript:void(0);">万户网络“香米粑”管理制度.doc </a>
+                    <span>18.9MB</span>
+                    <div class="att-modal-icon">
+                      <i class="fa fa-eye" data-toggle="tooltip" title="" data-original-title="预览"></i>
+                      <i class="fa fa-download" data-toggle="tooltip" title="" data-original-title="下载"></i>
+                      <i class="fa fa-times" data-toggle="tooltip" title="" data-original-title="删除"></i>
+                    </div>
+                    <div class="att-modal-bg"></div>
+                  </div>
+                </li>
+                <li><i class="icon-att icon-att-xls"></i>
+                  <div class="att-modal" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="万户网络“香米粑”管理制度.doc ">
+                    <a href="javascript:void(0);">万户网络“香米粑”管理制度.xls </a>
+                    <span>18.9MB</span>
+                    <div class="att-modal-icon">
+                      <i class="fa fa-eye" data-toggle="tooltip" title="" data-original-title="预览"></i>
+                      <i class="fa fa-download" data-toggle="tooltip" title="" data-original-title="下载"></i>
+                      <i class="fa fa-times" data-toggle="tooltip" title="" data-original-title="删除"></i>
+                    </div>
+                    <div class="att-modal-bg"></div>
+                  </div>
+                </li>
+                <li><i class="icon-att icon-att-mpg"></i>
+                  <div class="att-modal" data-toggle="tooltip" title="" data-placement="bottom" data-original-title="万户网络“香米粑”管理制度.mpg">
+                    <a href="javascript:void(0);">万户网络“香米粑”管理制度.mpg </a>
+                    <span>18.9MB</span>
+                    <div class="att-modal-icon">
+                      <i class="fa fa-eye" data-toggle="tooltip" title="" data-original-title="预览"></i>
+                      <i class="fa fa-download" data-toggle="tooltip" title="" data-original-title="下载"></i>
+                      <i class="fa fa-times" data-toggle="tooltip" title="" data-original-title="删除"></i>
+                    </div>
+                    <div class="att-modal-bg"></div>
+                  </div>
+                </li>
+                <li><i class="icon-att icon-att-pdf"></i>
+                  <div class="att-modal">
+                    <a href="javascript:void(0);">11.3.0.18_SP_20160411(项目化手动目化手动目化手动目化手动目化手动目化手动安装).pdf</a>
+                    <span>18.9MB</span>
+                    <div class="att-modal-icon">
+                      <i class="fa fa-eye" data-toggle="tooltip" title="" data-original-title="预览"></i>
+                      <i class="fa fa-download" data-toggle="tooltip" title="" data-original-title="下载"></i>
+                      <i class="fa fa-times" data-toggle="tooltip" title="" data-original-title="删除"></i>
+                    </div>
+                    <div class="att-modal-bg"></div>
+                  </div>
+                </li>
+                <li><i class="icon-att icon-att-pic"></i>
+                  <div class="att-modal">
+                    <a href="javascript:void(0);">11.3.0.18_SP_20160411(项目化手动安装).pic</a>
+                    <span>18.9MB</span>
+                    <div class="att-modal-icon">
+                      <i class="fa fa-eye" data-toggle="tooltip" title="" data-original-title="预览"></i>
+                      <i class="fa fa-download" data-toggle="tooltip" title="" data-original-title="下载"></i>
+                      <i class="fa fa-times" data-toggle="tooltip" title="" data-original-title="删除"></i>
+                    </div>
+                    <div class="att-modal-bg"></div>
+                  </div>
+                </li>
+                <li><i class="icon-att icon-att-ppt"></i>
+                  <div class="att-modal">
+                    <a href="javascript:void(0);">11.3.0.18_SP_20160411(项目化手动安装).ppt</a>
+                    <span>18.9MB</span>
+                    <div class="att-modal-icon">
+                      <i class="fa fa-eye" data-toggle="tooltip" title="" data-original-title="预览"></i>
+                      <i class="fa fa-download" data-toggle="tooltip" title="" data-original-title="下载"></i>
+                      <i class="fa fa-times" data-toggle="tooltip" title="" data-original-title="删除"></i>
+                    </div>
+                    <div class="att-modal-bg"></div>
+                  </div>
+                </li>
+                <li><i class="icon-att icon-att-psd"></i>
+                  <div class="att-modal">
+                    <a href="javascript:void(0);">11.3.0.18_SP_20160411(项目化手动安装).psd</a>
+                    <span>18.9MB</span>
+                    <div class="att-modal-icon">
+                      <i class="fa fa-eye" data-toggle="tooltip" title="" data-original-title="预览"></i>
+                      <i class="fa fa-download" data-toggle="tooltip" title="" data-original-title="下载"></i>
+                      <i class="fa fa-times" data-toggle="tooltip" title="" data-original-title="删除"></i>
+                    </div>
+                    <div class="att-modal-bg"></div>
+                  </div>
+                </li>
+                <li><i class="icon-att icon-att-radio"></i>
+                  <div class="att-modal">
+                    <a href="javascript:void(0);">11.3.0.18_SP_20160411(项目化手动安装).radio</a>
+                    <span>18.9MB</span>
+                    <div class="att-modal-icon">
+                      <i class="fa fa-eye" data-toggle="tooltip" title="" data-original-title="预览"></i>
+                      <i class="fa fa-download" data-toggle="tooltip" title="" data-original-title="下载"></i>
+                      <i class="fa fa-times" data-toggle="tooltip" title="" data-original-title="删除"></i>
+                    </div>
+                    <div class="att-modal-bg"></div>
+                  </div>
+                </li>
+                <li><i class="icon-att icon-att-txt"></i>
+                  <div class="att-modal">
+                    <a href="javascript:void(0);">11.3.0.18_SP_20160411(项目化手动安装).txt</a>
+                    <span>18.9MB</span>
+                    <div class="att-modal-icon">
+                      <i class="fa fa-eye" data-toggle="tooltip" title="" data-original-title="预览"></i>
+                      <i class="fa fa-download" data-toggle="tooltip" title="" data-original-title="下载"></i>
+                      <i class="fa fa-times" data-toggle="tooltip" title="" data-original-title="删除"></i>
+                    </div>
+                    <div class="att-modal-bg"></div>
+                  </div>
+                </li>
+                <li><i class="icon-att icon-att-zip"></i>
+                  <div class="att-modal">
+                    <a href="javascript:void(0);">11.3.0.18_SP_20160411(项目化手动安装).zip</a>
+                    <span>18.9MB</span>
+                    <div class="att-modal-icon">
+                      <i class="fa fa-eye" data-toggle="tooltip" title="" data-original-title="预览"></i>
+                      <i class="fa fa-download" data-toggle="tooltip" title="" data-original-title="下载"></i>
+                      <i class="fa fa-times" data-toggle="tooltip" title="" data-original-title="删除"></i>
+                    </div>
+                    <div class="att-modal-bg"></div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div> -->
+          <!---->
+          <div class="wh-dtl-art">
+            <div class="wh-dtl-media">
+              <iframe id="pdf" height="500" width="100%" allowtransparency="true" src="http://player.youku.com/embed/XMTUzNDE4Mzk2OA==" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+            <div class="wh-dtl-media">
+              <embed src="http://player.youku.com/player.php/sid/XMTUzNDE4Mzk2OA==/v.swf" allowFullScreen="true" quality="high" width="100%" height="400" align="middle" allowScriptAccess="always" type="application/x-shockwave-flash"></embed>
+            </div>
+            <div class="wh-dtl-media">
+              <p><img src="http://oa.whir.net:7001/defaultroot/upload/loginpage/201511/2015110913225824659162933.png" /><img src="http://oa.whir.net:7001/defaultroot/upload/loginpage/201511/2015110913225824659162933.png" /></p>
+            </div>
+            <h2>H2标题</h2>
+            <h3>H3标题</h3>
+            <h4>H4标题</h4>
+            <h5>H5标题</h5>
+            <h6>H5标题</h6>
+            <p><strong>段落</strong></p>
+            <p>忆峥嵘岁月，展宏图大业；内外同心，上下齐动！三站区的小伙伴们通过上周的拼搏，迎来了签单喜讯： 上海销售一部李汉英成功签单“上海弘洋投资有限公司”网站建设项目； 上海销售二部陆殷杰成功签单“上海郡领投资有限公司”网站建设项目；王豪成功签单“果的食品销售（上海）有限公司”、“上海潜龙誉瀚投资管理有限公司”网站建设项目；
+            </p>
+            <ul>
+              <li>上海销售四部董峰成功签单“上海别匠机电设备有限公司”网站建设项目；</li>
+              <li>上海中小企业销售部张琪成功签单“上海中盛实业集团有限公司”网站建设项目。</li>
+            </ul>
+            <ol>
+              <li>上海销售四部董峰成功签单“上海别匠机电设备有限公司”网站建设项目；</li>
+              <li>上海中小企业销售部张琪成功签单“上海中盛实业集团有限公司”网站建设项目。</li>
+              <li>上海销售四部董峰成功签单“上海别匠机电设备有限公司”网站建设项目；</li>
+              <li>上海中小企业销售部张琪成功签单“上海中盛实业集团有限公司”网站建设项目。</li>
+              <li>上海销售四部董峰成功签单“上海别匠机电设备有限公司”网站建设项目；</li>
+              <li>上海中小企业销售部张琪成功签单“上海中盛实业集团有限公司”网站建设项目。</li>
+            </ol>
+            <blockquote>
+              恭喜如上部门，特别上周频频出单的同事，相信你们一定会收获一个丰硕的四月！ 公司简介 龙元明城投资管理（上海）有限公司 龙元明城投资管理（上海）有限公司（以下简称“明城投资”）是龙元建设集团股份有限公司（股票代码600491）为实施基础设施项目投融资、建设、运营管理及开展政府和社会资本合作（PPP）业务而设立的专业机构。公司致力于成为中国最专业的基础设施投资银行，成为PPP项目各类资源的整合及运营商。
+            </blockquote>
+            <p>
+              上海巨铠楼梯有限公司 上海巨铠楼梯有限公司，中国顶级豪华整体原木家装产品专业制造商，成立于2000年，总部位于中国金融和时尚之都——上海，是中国最早一批集设计、生产、销售、服务于一体的专业楼梯生产企业，是国家住房和城乡建设部《住宅内用成品楼梯》标准参标企业及标准起草单位。
+            </p>
+            <p>
+              上海中盛实业集团有限公司 上海中盛实业集团有限公司（以下简称“中盛集团）位于中国“东方明珠”之称的世界大都市上海，坐落于上海最新大虹桥板块，紧邻上海虹桥枢纽。中盛集团始建于2000年，属股份制企业，是集科研、生产、加工、贸易、投资一体化具有自营进出口权的综合性集团公司，下属三个制造工厂，两个研究中心，一个工业控制公司，一个国际贸易公司，一个能源投资公司。
+            </p>
+          </div>
+          <div class="wh-dtl-nav">
+            <a class="wh-dtl-btn wh-dtl-prev" href="#">上一条</a>
+            <a class="wh-dtl-btn wh-dtl-print" href="javascript:" onclick="printView()">打印预览</a>
+            <a class="wh-dtl-btn wh-dtl-next" href="#">下一条</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="side-go-top">
+    <a href="javascript:void(0)"><i class="fa fa-file-mana"></i><em>归档</em></a>
+    <a href="javascript:void(0)"><i class="fa fa-pencil-square-o"></i><em>转发</em></a>
+    <a href="javascript:void(0)"><i class="fa fa-star-o"></i><em>收藏</em></a>
+    <a href="javascript:void(0)"><i class="fa fa-contract-mana"></i><em>笔记</em></a>
+    <a class="btn-go-top" href="javascript:void(0)"><i class="fa fa-angle-up"></i><em>顶部</em></a>
+  </div>
+  <!--#include file="include/detail-modal.html"-->
+  <script type="text/javascript" src="scripts/plugins/jquery/jquery.min.js"></script>
+  <script type="text/javascript" src="scripts/static/template.js"></script>
+  <script type="text/javascript" src="scripts/static/template.custom.js"></script>
+  <script type="text/javascript" src="scripts/static/template.extend.js"></script>
+  <script type="text/javascript" src="scripts/plugins/zTree_v3/jquery.ztree.core-3.5.js"></script>
+  <script type="text/javascript" src="scripts/pagejs/view-frame.js?v=20160307"></script>
+  <script>
+  $(function() {
+
+    $('[data-toggle="tooltip"]').tooltip({
+      container: "body"
+    })
+
+    //增加标签触发弹窗
+    $('#add-tags').on('click', function() {
+      layer.open({
+        type: 1,
+        shift: 2,
+        shadeClose: true, //开启遮罩关闭
+        area: ['420px', 'auto'], //宽高
+        // btn: ['确定', '取消', '其它', '其它'],
+        content: $('#detail-addtags'),
+        btn1: function(index) {
+          layer.close(index);
+          layer.msg('按钮1', {
+            time: 5000,
+            icon: 1
+          });
+        },
+        btn2: function() {
+          layer.msg('按钮2', {
+            time: 5000,
+            icon: 3
+          });
+        },
+        cancel: function() {
+          layer.msg('关闭后触发', {
+            time: 5000,
+            icon: 2
+          });
+        }
+      });
+    })
+    //增加评论触发
+    $('#add-comments').on('click', function() {
+      layer.open({
+        type: 1,
+        shift: 2,
+        shadeClose: true, //开启遮罩关闭
+        area: ['608px', '450px'], //宽高
+        content: $('#detail-comment')
+      });
+    })
+
+    $('.side-go-top').scrollTotop({
+      offsetFixed: 200,
+      /*滚动条距离顶部300时触发 show-fixed*/
+      offsetTop: 100,
+      /*滚动条距离顶部200时触发 show-top*/
+      duration: 300 /*回到顶部花费时间*/
+    });
+
+    //给点击事件增加一个状态，数值变化仅供参考
+    $('#meta-m-vote').astatus({
+      delay: 300
+    }, function() {
+      $(this).toggleClass('active');
+      var voteNum = parseInt($(this).children('em').text());
+      if ($(this).hasClass('active')) {
+        voteNum++;
+      } else {
+        --voteNum;
+      }
+      $(this).children('em').text(voteNum);
+    })
+  })
+
+  //选择多个人物
+  $('.chzn-done').chosen({
+    "width": "100%",
+    "disable_search_threshold": 10,
+    "search_contains": true,
+    "max_selected_options": 1,
+    "allow_single_deselect": true,
+    "placeholder_text_multiple": "\u8bf7\u9009\u62e9\u51e0\u9879",
+    "placeholder_text_single": "\u8bf7\u9009\u62e9\u4e00\u9879",
+    "no_results_text": "\u6ca1\u6709\u543b\u5408\u7684\u7ed3\u679c"
+  });
+
+  var customTagPrefix = '#new#';
+
+  // Method to add tags pressing enter
+  $('.chzn-container input').keyup(function(event) {
+
+    // Tag is greater than the minimum required chars and enter pressed
+    if (this.value && this.value.length >= 3 && (event.which === 13 || event.which === 188)) {
+
+      // Search an highlighted result
+      var highlighted = $('.chzn-container').find('li.active-result.highlighted').first();
+
+      // Add the highlighted option
+      if (event.which === 13 && highlighted.text() !== '') {
+        // Extra check. If we have added a custom tag with this text remove it
+        var customOptionValue = customTagPrefix + highlighted.text();
+        $('.chzn-done option').filter(function() {
+          return $(this).val() == customOptionValue;
+        }).remove();
+
+        // Select the highlighted result
+        var tagOption = $('.chzn-done option').filter(function() {
+          return $(this).html() == highlighted.text();
+        });
+        tagOption.attr('selected', 'selected');
+      }
+      // Add the custom tag option
+      else {
+        var customTag = this.value;
+
+        // Extra check. Search if the custom tag already exists (typed faster than AJAX ready)
+        var tagOption = $('.chzn-done option').filter(function() {
+          return $(this).html() == customTag;
+        });
+        if (tagOption.text() !== '') {
+          tagOption.attr('selected', 'selected');
+        } else {
+          var option = $('<option>');
+          option.text(this.value).val(customTagPrefix + this.value);
+          option.attr('selected', 'selected');
+
+          // Append the option an repopulate the chosen field
+          $('.chzn-done').append(option);
+        }
+      }
+
+      this.value = '';
+      $('.chzn-done').trigger('liszt:updated');
+      event.preventDefault();
+
+    }
+  });
+
+  // 方法仅供调试。
+  function printView() {
+    window.open("detail-print.html", "newwindow", "height=auto, width=1000, toolbar=no, menubar=no, scrollbars=no, resizable=no, location=no, status=no")
+  }
+  </script>
+</body>
+
+</html>
